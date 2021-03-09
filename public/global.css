@@ -3,7 +3,7 @@
 	--secondary: #050840;
 	--highlight-primary:#7ce7c9;
 	--highlight-secondary: #9d7beb;
-    --radius:.5rem;
+   	 --radius:.5rem;
 }
 
 *,
@@ -22,7 +22,7 @@ body {
 	padding:1em 0 0;
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
-    color:#fff;
+    	color:#fff;
 }
 
 @media (min-width: 40em) {
@@ -63,6 +63,9 @@ button {
 	color: var(--secondary);
 	background-color:var(--highlight-secondary);
 	outline: none;
+}
+img {
+	max-width:100%
 }
 
 svg {
