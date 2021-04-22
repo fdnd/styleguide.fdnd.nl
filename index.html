@@ -1,39 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>FDND Styleguide</title>
+  <meta name="description" content="Styleguide voor FDND"/>
 
-	<title>FDND Styleguide</title>
+  <link rel="canonical" href="https://styleguide.fdnd.nl/"/>
+  <meta name="robots" content="index, follow"/>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel='stylesheet' href='public/global.css'>
-    <link rel='stylesheet' href='public/header.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='/fdnd.css'>
+  <link rel="stylesheet" href="/local.css">
 
+  <link rel='icon' type='image/png' href='/favicon.png'>
+
+  <meta property="og:title" content="FDND Styleguide"/>
+  <meta property="og:description" content="Styleguide pagina voor de Ad Frontend Design & Development"/>
+  <meta property="og:site_name" content="styleguide.fdnd.nl"/>
+  <meta property="og:url" content="https://styleguide.fdnd.nl"/>
+  <meta property="og:type" content="website"/>
+  <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
-    <header>
-        <h1>Frontend Design & Development <em>Styleguide</em></h1>
-    </header>
+  <header>
+    <h1>Frontend Design & Development <em>Styleguide</em></h1>
+  </header>
 
-    <main>
-        <section>
-            <h2>Heading level 2</h2>
-            <h3>Heading level 3</h3>
-            <h4>Heading level 4</h4>
+  <nav>
+    <ul>
+      <li><a href="#colors">Kleuren</a></li>
+      <li><a href="#typography">Typografie</a></li>
+      <li><a href="#forms">Formulieren</a></li>
+    </ul>
+  </nav>
 
-            <p>paragraph</p>
+  <main>
+    
+    <!-- List of colors -->
+    <section id="colors">
+      <h2>Kleuren</h2>
+      <p>Deze kleuren worden gebruikt in onze expresses:</p>
 
-            <a href="#">Link</a>
+      <div>
+        <article>
+          <h2>White (--white)</h2>
+          <p>#ffffff</p>
+          <div></div>
+        </article>
 
-            <button>Button</button>
-        </section>
+        <article>
+          <h2>Blueberry (--blueberry)</h2>
+          <p>#050840</p>
+          <div></div>
+        </article>
 
-    </main>
+        <article>
+          <h2>Turqoise (--turquoise)</h2>
+          <p>#7ce7c9</p>
+          <div></div>
+        </article>
 
-    <footer>
+        <article>
+          <h2>Lavender (--lavender)</h2>
+          <p>#9d7beb</p>
+          <div></div>
+        </article>
+      </div>
+    </section>
 
-    </footer>
+    <!-- List of all typographic items -->
+    <section id="typography">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+
+      <p>De Ad Frontend Design & Development (FDND) is een praktijkgerichte, tweejarige hbo-opleiding waar studenten in worden opgeleid tot Frontend professionals. Frontenders ontwerpen en maken interactieve, toegankelijke toepassingen voor het web. Dit maakt dat een frontender opereert binnen het gebied van software development, interactieontwerp en digitaal visueel ontwerp.</p>
+
+      <p> Dit is een normale <a href="#">text link</a>, deze kunnen toegepast worden in een zin of</p>
+      <a href="#">Op zichzelf staand</a>
+    </section>
+
+    <!-- Buttons etc -->
+    <section id="forms">
+      <button class="pill">Lees meer</button>
+
+      <button>Button</button>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
 </body>
 </html>

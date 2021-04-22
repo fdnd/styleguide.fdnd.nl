@@ -1,9 +1,10 @@
 :root {
-	--primary: #fff;
+	--primary: #ffffff;
 	--secondary: #050840;
 	--highlight-primary:#7ce7c9;
 	--highlight-secondary: #9d7beb;
-   	 --radius:.5rem;
+  --radius:.5rem;
+  --pill: 2rem;
 }
 
 *,
@@ -67,7 +68,6 @@ button {
 img {
 	max-width:100%
 }
-
 svg {
 	width:1.75rem;
 	stroke: var(--secondary);

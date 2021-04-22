@@ -1,0 +1,35 @@
+:root {
+	--white: #ffffff;
+	--blueberry: #050840;
+	--turquoise:#7ce7c9;
+	--lavender: #9d7beb;
+  --radius:.5rem;
+  --pill: 2rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing:border-box;
+}
+html, body {
+	position: relative;
+}
+html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  background: var(--blueberry);
+  color: var(--white);
+
+  /* Creating Tomorrow payoff */
+  background-image: url(/assets/hvapayoff.svg);
+  background-position: bottom 2rem right 2rem;
+  background-repeat: no-repeat;
+  background-size: 10rem;
+}
