@@ -10,7 +10,7 @@
 *,
 *::before,
 *::after {
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 html, body {
 	position: relative;
@@ -20,16 +20,57 @@ html {
     scroll-behavior: smooth;
 }
 body {
-  margin: 0; padding: 0;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 5rem 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
-  background: var(--blueberry);
   color: var(--white);
 
-  /* Creating Tomorrow payoff */
-  background-image: url(/assets/hvapayoff.svg);
-  background-position: bottom 2rem right 2rem;
+  background: var(--blueberry);
+  background-image: url(/public/assets/hvapayoff.svg);
+  background-position: bottom 1rem left 2rem;
   background-repeat: no-repeat;
   background-size: 10rem;
+}
+header {
+  margin: 0;
+  padding: 1rem 0 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  flex-basis: 100%;
+  order: 3;
+
+}
+header img {
+  width: 10rem;
+  order: 1;
+}
+header h2 {
+  order: 2;
+  margin: 0 0 0 1rem;
+  padding: 0 0 0 1rem;
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: normal;
+  line-height:1.25;
+  border-left: 1px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header h2 strong {
+  font-weight: normal;
+}
+
+
+
+
+/* Basic HTML Elements */
+img {
+	max-width:100%;
 }
