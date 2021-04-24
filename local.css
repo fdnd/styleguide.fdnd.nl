@@ -1,35 +1,54 @@
-#colors > div {
+
+/* Colors */
+section#colors > div > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-#colors article {
+section#colors > div > p {
+  flex-basis: 100%;
+}
+
+/* color panes */
+section#colors article {
   margin: 1rem;
   width: 11rem;
   padding: 0;
   display: flex;
   flex-direction: column-reverse;
 }
-#colors article h2,
-#colors article p {
+section#colors article h2,
+section#colors article p {
   margin: 0; padding: 0;
   font-size: 1rem;
   font-weight: normal;
 }
-#colors article div {
+section#colors article div {
   width: 11rem;
   height: 11rem;
   border: 1px solid var(--white)
 }
-#colors article:nth-of-type(1) div {
+section#colors article:nth-of-type(1) div {
   background: var(--white);
 }
-#colors article:nth-of-type(2) div {
+section#colors article:nth-of-type(2) div {
   background-color: var(--blueberry);
 }
-#colors article:nth-of-type(3) div {
+section#colors article:nth-of-type(3) div {
   background-color: var(--turquoise);
 }
-#colors article:nth-of-type(4) div {
+section#colors article:nth-of-type(4) div {
   background-color: var(--lavender);
+}
+
+/* Typography */
+section#typography h2 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  flex-basis: 100%;
+  order: 3;
+  color: var(--turquoise);
+  background: var(--blueberry);
 }

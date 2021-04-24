@@ -1,18 +1,66 @@
+/*88888888 8888888b.  888b    888 8888888b.
+888        888  "Y88b 8888b   888 888  "Y88b
+888        888    888 88888b  888 888    888
+8888888    888    888 888Y88b 888 888    888
+888        888    888 888 Y88b888 888    888
+888        888    888 888  Y88888 888    888
+888        888  .d88P 888   Y8888 888  .d88P
+888        8888888P"  888    Y888 8888888P"
+
+This is our main stylesheet, the intention is
+to make building microsites way easier. Feel
+free to use everything you like and please
+leave issues for anything you don't like at:
+https://github.com/fdnd/styleguide/issues */
+
 :root {
 	--white: #ffffff;
 	--blueberry: #050840;
 	--turquoise:#7ce7c9;
 	--lavender: #9d7beb;
-  --radius:.5rem;
-  --pill: 2rem;
+  --rounded:.5rem;
+  --pilled: 2rem;
 }
 
+/* Part of Meyer's CSS Reset v2.0 http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main flow */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
-html, body {
+html,
+body {
 	position: relative;
 }
 html {
@@ -21,39 +69,51 @@ html {
 }
 body {
   margin: 0;
-  padding: 0 0 4rem 0;
+  padding: .4rem .4rem 6rem .4rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   color: var(--white);
 
   background: var(--blueberry);
-  background-image: url(/public/assets/hvapayoff.svg);
-  background-position: bottom 1rem left 2rem;
+  background-image: url('/public/assets/hvapayoff.svg');
+  background-position: bottom 1rem left 1rem;
   background-repeat: no-repeat;
   background-size: 10rem;
 }
-header {
-  margin: 0;
-  padding: 1rem 0 0 2rem;
+
+/* <HEADER> */
+body > header {
+  margin: 1rem 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
-header h1 {
+
+/* Page title */
+body > header > h1 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
   flex-basis: 100%;
   order: 3;
   color: var(--turquoise)
 }
-header h1 abbr {
+body > header > h1 > abbr {
   text-decoration: none;
 }
-header img {
+
+/* HvA Logo | FDND */
+body > header > img {
+  margin: 0 0 0 1rem;
+  padding: 0;
   width: 10rem;
   order: 1;
 }
-header h2 {
+body > header > h2 {
   order: 2;
   margin: 0 0 0 1rem;
   padding: 0 0 0 1rem;
@@ -66,14 +126,275 @@ header h2 {
   flex-direction: column;
   align-items: flex-start;
 }
-header h2 strong {
+body > header > h2 > strong {
   font-weight: normal;
 }
 
-
-
-
-/* Basic HTML Elements */
-img {
-	max-width:100%;
+/* <NAV> */
+body > nav {
+  margin: 0;
+  padding: 0;
 }
+body > nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style:none;
+}
+body > nav ul li {
+  display: inline;
+}
+body > nav a {
+  margin: .2rem;
+  padding: .6rem 1.2rem;
+  display: inline-block;
+  background:var(--blueberry);
+  color: var(--turquoise);
+  border: 1px solid var(--turquoise);
+  border-radius: var(--pilled);
+  font-weight: normal;
+  text-decoration: none;
+  transform-origin: center center;
+}
+body > nav a:hover,
+body > nav a:focus {
+  background:var(--turquoise);
+  color: var(--blueberry);
+  outline: none;
+}
+body > nav li:nth-of-type(1) a {
+  border-radius: var(--rounded);
+  transform: rotate(-5deg);
+}
+body > nav li:nth-of-type(2) a {
+  transform: rotate(5deg);
+  background:var(--turquoise);
+  color: var(--blueberry);
+}
+body > nav li:nth-of-type(2) a:hover,
+body > nav li:nth-of-type(2) a:focus {
+  background:var(--blueberry);
+  color: var(--turquoise);
+}
+body > nav li:nth-of-type(3) a {
+  transform: rotate(3deg);
+}
+body > nav li:nth-of-type(4) a {
+  border-radius: var(--rounded);
+  transform: rotate(-2deg);
+  background:var(--turquoise);
+  color: var(--blueberry);
+}
+body > nav li:nth-of-type(4) a:hover,
+body > nav li:nth-of-type(4) a:focus {
+  background:var(--blueberry);
+  color: var(--turquoise);
+}
+body > nav li:nth-of-type(5) a {
+  transform: rotate(4deg);
+}
+body > nav li:nth-of-type(6) a {
+  border-radius: var(--rounded);
+  background:var(--turquoise);
+  color: var(--blueberry);
+  transform: rotate(1deg);
+}
+body > nav li:nth-of-type(6) a:hover,
+body > nav li:nth-of-type(6) a:focus {
+  background:var(--blueberry);
+  color: var(--turquoise);
+}
+body > nav li:nth-of-type(7) a {
+  border-radius: var(--rounded);
+  transform: rotate(-2deg);
+}
+body > nav li:nth-of-type(8) a {
+  background:var(--turquoise);
+  color: var(--blueberry);
+  transform: rotate(3deg);
+}
+body > nav li:nth-of-type(8) a:hover,
+body > nav li:nth-of-type(8) a:focus {
+  background:var(--blueberry);
+  color: var(--turquoise);
+}
+body > nav li:nth-of-type(1) a.active,
+body > nav li:nth-of-type(2) a.active,
+body > nav li:nth-of-type(3) a.active,
+body > nav li:nth-of-type(4) a.active,
+body > nav li:nth-of-type(5) a.active,
+body > nav li:nth-of-type(6) a.active,
+body > nav li:nth-of-type(7) a.active,
+body > nav li:nth-of-type(8) a.active {
+  background: var(--lavender);
+  border-color: var(--lavender);
+  color: var(--blueberry);
+}
+/* Back to top link */
+body > nav > a {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--lavender);
+  border-color: var(--lavender);
+}
+body > nav > a:hover,
+body > nav > a:focus {
+  background: var(--lavender);
+  color: var(--blueberry);
+}
+
+/* <MAIN> */
+/* Block level elements in main */
+main > article,
+main > section {
+  margin: 0;
+  padding: 0;
+}
+main > article > div,
+main > section > div {
+  margin: 0; padding: 0.5rem;
+  background: var(--turquoise);
+  color: var(--blueberry);
+  border-radius: var(--rounded);
+}
+main h1 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  flex-basis: 100%;
+  order: 3;
+  color: var(--turquoise);
+  background: var(--blueberry);
+}
+main > article > h2,
+main > section > h2 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  flex-basis: 100%;
+  order: 3;
+  color: var(--turquoise);
+  background: var(--blueberry);
+}
+main h3 {
+  margin: 3.2rem 0;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--blueberry);
+}
+main h4 {
+  margin: 1.3rem 0;
+  font-weight: bold;
+}
+main p {
+  margin: 1rem 0;
+}
+
+/* Inline level elements in main */
+main a {
+  color: var(--blueberry);
+  text-decoration: underline;
+}
+main abbr {
+ text-decoration: none;
+}
+main b {
+  font-weight: bold;
+}
+main cite {
+  font-style: italic;
+}
+main code {
+  padding: 0 .2rem;
+  font-family: monospace;
+  background: var(--blueberry);
+  color: var(--turquoise);
+}
+main dfn {
+
+}
+main em {
+
+}
+main i {
+
+}
+main img {
+	max-width:100%;
+  border-radius: var(--radius);
+}
+main mark {
+  background-color: yellow;
+}
+main q {
+
+}
+main strong {
+
+}
+main sub {
+
+}
+main sup {
+
+}
+main time {
+
+}
+
+/* 
+@media (min-width:60rem) {
+  body {
+    display: grid;
+    grid-template-columns: auto 26rem;
+    grid-template-areas:
+      "header header"
+      "main nav"
+      "footer footer";
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    padding: 0 0 0 2rem;
+    max-width: calc(100vw - 28rem);
+    grid-area: main;
+  }
+  body > nav {
+    grid-area: nav;
+  }
+  body > nav h2 {
+    margin: 0 0 0 2rem;
+  }
+  body > nav > a {
+    right: 16rem;
+  }
+  body > nav > ul {
+    padding:0 2rem
+  }
+  body > nav > ul > li {
+    white-space: nowrap;
+  }
+  footer {
+    grid-area: footer;
+  }
+} */
+/* @media (min-width: 90rem) {
+  body {
+      display: grid;
+      padding: 1rem;
+      grid-template-columns: 60rem 30rem auto;
+      grid-template-areas:
+          "header header header"
+          "main nav ."
+          "footer footer footer";
+  }
+  nav#menu > a {
+      left: 62rem;
+      right: auto;
+  }
+} */
