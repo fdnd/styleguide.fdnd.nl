@@ -314,14 +314,14 @@ main code {
   background: var(--blueberry);
   color: var(--turquoise);
 }
-main dfn {
+/* main dfn {
 
-}
+} */
 main em {
-
+  font-style: italic;
 }
 main i {
-
+  font-style: italic;
 }
 main img {
 	max-width:100%;
@@ -331,16 +331,23 @@ main mark {
   background-color: yellow;
 }
 main q {
-
+  font-style: italic;
 }
 main strong {
-
+  font-weight: bold;
+}
+main sub,
+main sup {
+  font-size: .7rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 main sub {
-
+  bottom: -.5rem;
 }
 main sup {
-
+  top: -.5rem;
 }
 main time {
 
