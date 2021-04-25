@@ -104,13 +104,14 @@
         <p>Dit is een inline code element: <code>mv ./public_html/super.html ./public_html/awesome.html</code>.</p>
         <!-- <dfn>? -->
         <p>Dit is een <em>em(phasize)</em> element, hiermee wordt semantische nadruk gelegd. Kan genest worden, elk niveau krijgt dan extra nadruk.</p>
-        <p>Dit is een image, deze kunnen <img src="" alt=""> in een alinea worden toegepast of</p>
-        <img src="" alt="">
+        <p>Dit is een image, deze kunnen <img src="https://via.placeholder.com/100x40.png/050840/7ce7c9" alt="100x40 placeholder image"> in een alinea worden toegepast of</p>
+        <img src="https://via.placeholder.com/640x480r.png/050840/7ce7c9" alt="640x480 placeholder image">
         <p>Dit is een <i>i(diomatic text)</i> element, gebruik deze voor technische terminologie, jargon etc. zonder semantische waarde.</p>
         <p>Dit is een <mark>(ge)mark(eerd)</mark> stuk tekst.</p>
         <p>Dit is een <q>inline quote</q>.</p>
         <p>Dit is een <strong>strong(ly)</strong> benadrukt element met sterke urgentie qua semantiek.</p>
         <p>Dit is <sup>superschrift</sup> en dit is <sub>subschrift</sub> voor voetnoten of verwijzing.</p>
+        <p>Dit is een time element <time>15 april 2021</time></p>
       </div>
     </section>
 
@@ -118,9 +119,14 @@
     <section id="forms">
       <h2>Formulieren</h2>
       <div>
-        <form action="/">
+        <p>De opmaak van standaard formulieritems (inputs/textarea/buttons) staat in <code>fdnd.css</code> en het grid voor dit specifieke formulier in <code>local.css</code></p>
+        <form>
           <label for="checkbox">Checkbox</label>
-          <input type="checkbox" name="checkbox" id="checkbox">
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <input type="checkbox" name="checkbox" id="checkbox2" checked>
+            <input type="checkbox" name="checkbox" id="checkbox3" disabled>
+          </div>
           
           <label for="color">Color</label>
           <input type="color" name="color" id="">
@@ -138,7 +144,7 @@
           <input type="file" name="file" id="file">
 
           <label for="image">Image</label>
-          <input type="image" src="image" alt="image">
+          <input type="image" src="https://via.placeholder.com/200x40r.png/050840/7ce7c9" alt="image">
 
           <label for="month">Month</label>
           <input type="month" name="month" id="month">
@@ -150,9 +156,11 @@
           <input type="password" name="password" id="password">
 
           <label for="radio">Radio</label>
-          <input type="radio" name="radio" id="radio">
-          <input type="radio" name="radio" id="radio">
-          <input type="radio" name="radio" id="radio">
+          <div>
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2" checked>
+            <input type="radio" name="radio" id="radio3" disabled>
+          </div>
           
           <label for="range">Range</label>
           <input type="range" name="range" id="range">
@@ -178,8 +186,8 @@
           <label for="button">Button</label>
           <button name="button" id="button">Button</button>
 
-          <label for="pill">Button.pill</label>
-          <button class="pill" name="pill" id="pill">Lees meer</button>
+          <label for="pill">Button</label>
+          <button class="pill" name="pill" id="pill">Button .pill</button>
 
           <label for="menu">Menu</label>
           <button type="menu" name="menu" id="menu">Menu</button>
@@ -193,6 +201,17 @@
           <label for="disabled">Disabled</label>
           <button disabled="disabled" name="disabled" id="disabled">Disabled</button>
         </form>
+      </div>
+    </section>
+
+    <!-- Imagery -->
+    <section id="imagery">
+      <h2>Beeld</h2>
+      <div>
+        <p>Een selectie van beeldmateriaal dat gebruikt kan worden voor FDND.</p>
+        <img src="https://via.placeholder.com/640x480.png/050840/7ce7c9" alt="640x480 placeholder image">
+        <img src="https://via.placeholder.com/1024x768.png/050840/7ce7c9" alt="1024x768 placeholder image">
+        <img src="https://via.placeholder.com/1280x1024.png/050840/7ce7c9" alt="1280x1024 placeholder image">
       </div>
     </section>
 
@@ -218,8 +237,9 @@
   </main>
 
   <footer>
-
+    <p>Copyleft 2021, all wrongs reversed</p>
   </footer>
 
+  <script>document.querySelector('form').addEventListener('submit', event=>event.preventDefault())</script>
 </body>
 </html>
