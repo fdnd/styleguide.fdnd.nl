@@ -53,7 +53,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Main flow */
+/* Generic styling */
 *,
 *::before,
 *::after {
@@ -79,6 +79,10 @@ body {
   background-position: bottom 1rem left 1rem;
   background-repeat: no-repeat;
   background-size: 10rem;
+}
+a {
+  color: var(--blueberry);
+  text-decoration: underline;
 }
 
 /* <HEADER> */
@@ -279,10 +283,6 @@ main p {
 }
 
 /* Inline level elements in main */
-main a {
-  color: var(--blueberry);
-  text-decoration: underline;
-}
 main abbr {
  text-decoration: none;
 }
