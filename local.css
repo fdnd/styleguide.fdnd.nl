@@ -17,7 +17,7 @@ section#colors article {
   display: flex;
   flex-direction: column-reverse;
 }
-section#colors article h2,
+section#colors article h3,
 section#colors article p {
   margin: 0; padding: 0;
   font-size: 1rem;
