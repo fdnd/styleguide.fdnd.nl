@@ -81,7 +81,7 @@ body {
   background-size: 10rem;
 }
 a {
-  color: var(--blueberry);
+  color: var(--white);
   text-decoration: underline;
 }
 
@@ -281,7 +281,9 @@ main h4 {
 main p {
   margin: 1rem 0;
 }
-
+ main a {
+   color: var(--blueberry)
+ }
 /* Inline level elements in main */
 main abbr {
  text-decoration: none;
