@@ -355,7 +355,18 @@ form textarea {
 form button {
   
 }
+/* footer */
+footer h2 {
+  font-size: 3.2em;
+}
+footer a {
+  color:white
+}
+footer ul {
+  list-style:none;
+}
 
+/* Media queries */
 @media (min-width:50rem) {
   body {
     padding: 1rem 1rem 6rem 1rem;
