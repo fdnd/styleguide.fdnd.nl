@@ -43,39 +43,39 @@
   <main>
     <!-- List of colors -->
     <section id="colors">
-      <h2>Kleuren</h2>
-      <div>
+        <h2>Kleuren</h2>
         <div>
-          <article>
-            <h3>White (--white)</h3>
-            <p>#ffffff</p>
-            <div></div>
-          </article>
+            <article>
+                <h3>White (--white)</h3>
+                <p>#ffffff</p>
+                <div></div>
+            </article>
 
-          <article>
-            <h3>Blueberry (--blueberry)</h3>
-            <p>#050840</p>
-            <div></div>
-          </article>
+            <article>
+                <h3>Blueberry (--blueberry)</h3>
+                <p>#050840</p>
+                <div></div>
+            </article>
 
-          <article>
-            <h3>Turqoise (--turquoise)</h3>
-            <p>#7ce7c9</p>
-            <div></div>
-          </article>
+            <article>
+                <h3>Turqoise (--turquoise)</h3>
+                <p>#7ce7c9</p>
+                <div></div>
+            </article>
 
-          <article>
-            <h3>Lavender (--lavender)</h3>
-            <p>#9d7beb</p>
-            <div></div>
-          </article>
-      </div>
+            <article>
+                <h3>Lavender (--lavender)</h3>
+                <p>#9d7beb</p>
+                <div></div>
+            </article>
+        </div>
+
     </section>
 
     <!-- List of all layout items -->
     <section id="layout">
-      <h2>Layout</h2>
-      <div>
+        <h2>Layout</h2>
+
         <article>
             <h3>Flexbox</h3>
             <p></p>
@@ -85,17 +85,19 @@
             <h3>Grid</h3>
             <p></p>
         </article>
-      </div>
+
     </section>
 
     <!-- List of all typographic items -->
     <section id="typography">
-      <h2>Typografie</h2>
-      <div>
-        <h1>Heading 1 (1x per pagina)</h1>
-        <h2>Heading 2 (1x per section/article)</h2>
+        <h2>Typografie</h2>
+
+        <h1>Heading 1 <em class="note">(1x per pagina)</em></h1>
+        <h2>Heading 2 <em class="note">(1x per section/article)</em></h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
+
+        
 
         <p>Dit is een kale alineatekst. De Ad Frontend Design & Development (FDND) is een praktijkgerichte, tweejarige hbo-opleiding waar studenten in worden opgeleid tot Frontend professionals. Frontenders ontwerpen en maken interactieve, toegankelijke toepassingen voor het web. Dit maakt dat een frontender opereert binnen het gebied van software development, interactieontwerp en digitaal visueel ontwerp.</p>
         <p> Dit is een <a href="#">text link</a>, deze kunnen worden toegepast in een alinea of</p>
@@ -114,117 +116,111 @@
         <p>Dit is een <strong>strong(ly)</strong> benadrukt element met sterke urgentie qua semantiek.</p>
         <p>Dit is <sup>superschrift</sup> en dit is <sub>subschrift</sub> voor voetnoten of verwijzing.</p>
         <p>Dit is een time element <time>15 april 2021</time></p>
-      </div>
     </section>
 
     <!-- Buttons etc -->
     <section id="forms">
-      <h2>Formulieren</h2>
-      <div>
+        <h2>Formulieren</h2>
+        
         <p>De opmaak van standaard formulieritems (inputs/textarea/buttons) staat in <code>fdnd.css</code> en het grid voor dit specifieke formulier in <code>local.css</code></p>
         <form>
-          <label for="checkbox">Checkbox</label>
-          <div>
+            <label for="checkbox">Checkbox</label>
+            <div>
             <input type="checkbox" name="checkbox" id="checkbox1">
             <input type="checkbox" name="checkbox" id="checkbox2" checked>
             <input type="checkbox" name="checkbox" id="checkbox3" disabled>
-          </div>
-          
-          <label for="color">Color</label>
-          <input type="color" name="color" id="">
-          
-          <label for="date">Date</label>
-          <input type="date" name="date" id="date">
+            </div>
+            
+            <label for="color">Color</label>
+            <input type="color" name="color" id="">
+            
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
 
-          <label for="datetime">Datetime</label>
-          <input type="datetime" name="datetime" id="datetime">
+            <label for="datetime">Datetime</label>
+            <input type="datetime" name="datetime" id="datetime">
 
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
 
-          <label for="file">File</label>
-          <input type="file" name="file" id="file">
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
 
-          <label for="image">Image</label>
-          <input type="image" src="https://via.placeholder.com/200x40r.png/050840/7ce7c9" alt="image">
+            <label for="image">Image</label>
+            <input type="image" src="https://via.placeholder.com/200x40r.png/050840/7ce7c9" alt="image">
 
-          <label for="month">Month</label>
-          <input type="month" name="month" id="month">
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month">
 
-          <label for="number">Number</label>
-          <input type="number" name="number" id="number">
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number">
 
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
 
-          <label for="radio">Radio</label>
-          <div>
+            <label for="radio">Radio</label>
+            <div>
             <input type="radio" name="radio" id="radio1">
             <input type="radio" name="radio" id="radio2" checked>
             <input type="radio" name="radio" id="radio3" disabled>
-          </div>
-          
-          <label for="range">Range</label>
-          <input type="range" name="range" id="range">
+            </div>
+            
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range">
 
-          <label for="search">Search</label>
-          <input type="search" name="search" id="search">
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search">
 
-          <label for="tel">Telephone</label>
-          <input type="tel" name="tel" id="tel">
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel">
 
-          <label for="text">Text</label>
-          <input type="text" name="text" id="text">
+            <label for="text">Text</label>
+            <input type="text" name="text" id="text">
 
-          <label for="textarea">Textarea</label>
-          <textarea name="textarea" id="textarea"></textarea>
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" id="textarea"></textarea>
 
-          <label for="url">URL</label>
-          <input type="url" name="url" id="url">
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
 
-          <label for="week">Week</label>
-          <input type="week" name="week" id="week">
+            <label for="week">Week</label>
+            <input type="week" name="week" id="week">
 
-          <label for="button">Button</label>
-          <button name="button" id="button">Button</button>
+            <label for="button">Button</label>
+            <button name="button" id="button">Button</button>
 
-          <label for="pill">Button</label>
-          <button class="pill" name="pill" id="pill">Button .pill</button>
+            <label for="pill">Button</label>
+            <button class="pill" name="pill" id="pill">Button .pill</button>
 
-          <label for="menu">Menu</label>
-          <button type="menu" name="menu" id="menu">Menu</button>
+            <label for="menu">Menu</label>
+            <button type="menu" name="menu" id="menu">Menu</button>
 
-          <label for="reset">Reset</label>
-          <button type="reset" name="reset" id="reset">Reset</button>
+            <label for="reset">Reset</label>
+            <button type="reset" name="reset" id="reset">Reset</button>
 
-          <label for="submit">Submit</label>
-          <button type="submit" name="submit" id="submit">Submit</button>
+            <label for="submit">Submit</label>
+            <button type="submit" name="submit" id="submit">Submit</button>
 
-          <label for="disabled">Disabled</label>
-          <button disabled="disabled" name="disabled" id="disabled">Disabled</button>
+            <label for="disabled">Disabled</label>
+            <button disabled="disabled" name="disabled" id="disabled">Disabled</button>
         </form>
-      </div>
     </section>
 
     <!-- Imagery -->
     <section id="imagery">
-      <h2>Beeld</h2>
-      <div>
+        <h2>Beeld</h2>
+        
         <p>Een selectie van beeldmateriaal dat gebruikt kan worden voor FDND.</p>
         <img src="https://via.placeholder.com/640x480.png/050840/7ce7c9" alt="640x480 placeholder image">
         <img src="https://via.placeholder.com/1024x768.png/050840/7ce7c9" alt="1024x768 placeholder image">
         <img src="https://via.placeholder.com/1280x1024.png/050840/7ce7c9" alt="1280x1024 placeholder image">
-      </div>
     </section>
 
     <!-- About -->
     <section id="about">
-      <h2>Over</h2>
-      <div>
-        <p></p>
+        <h2>Over</h2>
 
         <p>Deze styleguide is mede tot stand gekomen door <cite>Lukas van Driel</cite> van <a href="https://www.q42.nl/">Q42</a>! Hij deelde zijn werkwijze en een aantal styleguides van projecten die model hebben gestaan voor onze styleguide.</p>
-      </div>
     </section>
   </main>
 
