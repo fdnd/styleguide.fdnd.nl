@@ -370,6 +370,9 @@ form button {
   
 }
 /* footer */
+footer {
+  padding:2rem
+}
 footer h2 {
   font-size: 3.2em;
 }
@@ -403,6 +406,7 @@ footer ul {
   }
   body > nav > div {
     position: fixed;
+    max-width:25rem
   }
   
   footer {
