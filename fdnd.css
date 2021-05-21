@@ -87,6 +87,9 @@ a {
 figure {
   margin-top: 2rem;
 }
+figcaption {
+  font-style: italic;
+}
 /* <HEADER> */
 body > header {
   /* HvA Logo (=url encoded hvapayoff.svg using https://yoksel.github.io/url-encoder) */
