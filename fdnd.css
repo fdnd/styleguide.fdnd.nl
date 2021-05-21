@@ -84,7 +84,9 @@ a {
   color: var(--white);
   text-decoration: underline;
 }
-
+figure {
+  margin-top: 2rem;
+}
 /* <HEADER> */
 body > header {
   /* HvA Logo (=url encoded hvapayoff.svg using https://yoksel.github.io/url-encoder) */
