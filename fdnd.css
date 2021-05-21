@@ -397,6 +397,17 @@ ul.flat {
   list-style:none;
   margin:0;
 }
+ul.flat a {
+  display: block;
+  position: relative;
+  padding-left: 2rem
+}
+ul.flat a svg {
+  position: absolute;
+  width:1.75rem;
+  left:0rem;
+  top: -0.5rem;
+}
 
 /* Media queries */
 @media (min-width:50rem) {
