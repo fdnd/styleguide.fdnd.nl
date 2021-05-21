@@ -296,6 +296,10 @@ main ol {
   margin-left: 2em;
   
 }
+main ul li, 
+main ol li {
+  margin-bottom: 1rem;
+}
 /* Inline level elements in main */
 main abbr {
  text-decoration: none;
