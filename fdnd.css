@@ -110,14 +110,13 @@ body > header::before {
   width: 12rem;
 }
 body > header > h1 {
-  margin: 1rem 0;
+  margin: 7.5rem 2rem 1rem;
   font-size: 5rem;
   font-weight: bold;
   flex-basis: 100%;
   color: var(--lavender);
   line-height: 1.25; /* needed for subbrand */
   position: relative;
-  margin-top: 7.5rem;
 }
 body > header > h1 > abbr {
   text-decoration: none;
@@ -249,7 +248,7 @@ body > nav > a:focus {
 main > article,
 main > section {
   margin: 8rem 0 10rem;
-  padding: 0.5rem;
+  padding: 2rem;
   background: var(--turquoise);
   color: var(--blueberry);
   border-radius: var(--rounded);
@@ -289,9 +288,14 @@ main h4 {
 main p {
   margin: 1rem 0;
 }
- main a {
-   color: var(--blueberry)
- }
+main a {
+  color: var(--blueberry)
+}
+main ul,
+main ol {
+  margin-left: 2em;
+  
+}
 /* Inline level elements in main */
 main abbr {
  text-decoration: none;
