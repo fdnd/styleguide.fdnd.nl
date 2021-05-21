@@ -400,12 +400,7 @@ footer ul {
   body > nav > div {
     position: fixed;
   }
-  main > article > h2:first-of-type,
-  main > section > h2:first-of-type {
-    margin: -7.5rem 0 3.5rem 0;
-    font-size: 3.2rem;
-
-  } 
+  
   footer {
     grid-area: footer;
   }
@@ -423,4 +418,10 @@ footer ul {
       left: 62rem;
       right: auto;
   }
+  main > article > h2:first-of-type,
+  main > section > h2:first-of-type {
+    margin: -7.5rem 0 3.5rem 0;
+    font-size: 3.2rem;
+
+  } 
 }
