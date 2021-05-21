@@ -397,12 +397,12 @@ ul.flat {
   list-style:none;
   margin:0;
 }
-ul.flat a {
+a.icon {
   display: block;
   position: relative;
   padding-left: 2rem
-}
-ul.flat a svg {
+} 
+a.icon svg {
   position: absolute;
   width:1.75rem;
   left:0rem;
