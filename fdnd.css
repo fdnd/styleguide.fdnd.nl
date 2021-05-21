@@ -133,9 +133,7 @@ body > nav {
   margin: 0;
   padding: 0;
 }
-body > nav > div {
-  position: fixed;
-}
+
 body > nav ul {
   margin: 0;
   padding: 0;
@@ -398,6 +396,9 @@ footer ul {
   body > nav {
     grid-area: nav;
     margin: 5.8rem 0 0 1rem;
+  }
+  body > nav > div {
+    position: fixed;
   }
   footer {
     grid-area: footer;
