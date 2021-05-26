@@ -402,6 +402,7 @@ footer a {
 footer ul {
   list-style:none;
   display:flex;
+  flex-wrap:wrap;
 }
 footer ul li {
   margin-right: 1rem;
