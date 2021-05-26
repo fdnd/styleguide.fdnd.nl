@@ -140,7 +140,7 @@ body > header > h1 > abbr {
 body > header > h1 > em {
   border: 3px solid var(--turquoise);
   font-weight: 100;
-  border-radius: calc(4 * var(--radius));
+  border-radius: calc(4 * var(--rounded));
   padding: .5rem 2rem;
   box-shadow: -1rem .5rem 0 0 var(--turquoise);
   margin-left: 1rem;
