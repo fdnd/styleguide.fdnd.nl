@@ -152,6 +152,7 @@ body > nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap:wrap;
   list-style:none;
 }
 body > nav ul li {
