@@ -69,7 +69,7 @@ body:after {
 
   width: 26.7rem;
   height: 2.6rem;
-  left: 1.3rem;
+  left: 3rem;
 
   background-position: center left;
   background-size: 10rem;
@@ -380,7 +380,8 @@ form button {
 }
 /* footer */
 footer {
-  padding:2rem
+  padding:2rem;
+  margin-bottom: 2rem;
 }
 footer h2 {
   font-size: 3.2em;
@@ -390,6 +391,10 @@ footer a {
 }
 footer ul {
   list-style:none;
+  display:flex;
+}
+footer ul li {
+  margin-right: 1rem;
 }
 
 /* utility classes */
