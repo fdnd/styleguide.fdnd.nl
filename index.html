@@ -57,19 +57,19 @@
 
             <article>
                 <h3>Blueberry (--blueberry)</h3>
-                <p>#050840</p>
+                <p>#050542</p>
                 <div></div>
             </article>
 
             <article>
                 <h3>Turqoise (--turquoise)</h3>
-                <p>#7ce7c9</p>
+                <p>#66e5bf</p>
                 <div></div>
             </article>
 
             <article>
                 <h3>Lavender (--lavender)</h3>
-                <p>#9d7beb</p>
+                <p>#a675f5</p>
                 <div></div>
             </article>
         </div>
@@ -101,8 +101,6 @@
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
 
-        
-
         <p>Dit is een kale alineatekst. De Ad Frontend Design & Development (FDND) is een praktijkgerichte, tweejarige hbo-opleiding waar studenten in worden opgeleid tot Frontend professionals. Frontenders ontwerpen en maken interactieve, toegankelijke toepassingen voor het web. Dit maakt dat een frontender opereert binnen het gebied van software development, interactieontwerp en digitaal visueel ontwerp.</p>
         <p> Dit is een <a href="#">text link</a>, deze kunnen worden toegepast in een alinea of</p>
         <a href="#">Op zichzelf staand</a>
@@ -112,14 +110,14 @@
         <p>Dit is een inline code element: <code>mv ./public_html/super.html ./public_html/awesome.html</code>.</p>
         <!-- <dfn>? -->
         <p>Dit is een <em>em(phasize)</em> element, hiermee wordt semantische nadruk gelegd. Kan genest worden, elk niveau krijgt dan extra nadruk.</p>
-        <p>Dit is een image, deze kunnen <img src="https://via.placeholder.com/100x30.png/050840/7ce7c9" alt="100x30 placeholder image"> in een alinea worden toegepast of</p>
+        <p>Dit hieronder is een image:</p>
         <img src="https://via.placeholder.com/640x480r.png/050840/7ce7c9" alt="640x480 placeholder image">
         <p>Dit is een <i>i(diomatic text)</i> element, gebruik deze voor technische terminologie, jargon etc. zonder semantische waarde.</p>
         <p>Dit is een <mark>(ge)mark(eerd)</mark> stuk tekst.</p>
         <p>Dit is een <q>inline quote</q>.</p>
         <p>Dit is een <strong>strong(ly)</strong> benadrukt element met sterke urgentie qua semantiek.</p>
         <p>Dit is <sup>superschrift</sup> en dit is <sub>subschrift</sub> voor voetnoten of verwijzing.</p>
-        <p>Dit is een time element <time>15 april 2021</time></p>
+        <p>Dit is een time element <time datetime="2021-04-15">15 april 2021</time></p>
 
         <ul>
           <li>Dit is een</li>
@@ -175,21 +173,21 @@
         
         <p>De opmaak van standaard formulieritems (inputs/textarea/buttons) staat in <code>fdnd.css</code> en het grid voor dit specifieke formulier in <code>local.css</code></p>
         <form>
-            <label for="checkbox">Checkbox</label>
+            <label for="checkbox1">Checkbox</label>
             <div>
-            <input type="checkbox" name="checkbox" id="checkbox1">
-            <input type="checkbox" name="checkbox" id="checkbox2" checked>
-            <input type="checkbox" name="checkbox" id="checkbox3" disabled>
+              <input type="checkbox" name="checkbox" id="checkbox1">
+              <input type="checkbox" name="checkbox" id="checkbox2" checked>
+              <input type="checkbox" name="checkbox" id="checkbox3" disabled>
             </div>
             
             <label for="color">Color</label>
-            <input type="color" name="color" id="">
+            <input type="color" name="color" id="color">
             
             <label for="date">Date</label>
             <input type="date" name="date" id="date">
 
-            <label for="datetime">Datetime</label>
-            <input type="datetime" name="datetime" id="datetime">
+            <!-- <label for="datetime">Datetime</label>
+            <input type="datetime" name="datetime" id="datetime"> -->
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
@@ -198,7 +196,7 @@
             <input type="file" name="file" id="file">
 
             <label for="image">Image</label>
-            <input type="image" src="https://via.placeholder.com/200x40r.png/050840/7ce7c9" alt="image">
+            <input type="image" id="image" src="https://via.placeholder.com/200x40r.png/050840/7ce7c9" alt="image">
 
             <label for="month">Month</label>
             <input type="month" name="month" id="month">
@@ -209,11 +207,11 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
 
-            <label for="radio">Radio</label>
+            <label for="radio1">Radio</label>
             <div>
-            <input type="radio" name="radio" id="radio1">
-            <input type="radio" name="radio" id="radio2" checked>
-            <input type="radio" name="radio" id="radio3" disabled>
+              <input type="radio" name="radio" id="radio1">
+              <input type="radio" name="radio" id="radio2" checked>
+              <input type="radio" name="radio" id="radio3" disabled>
             </div>
             
             <label for="range">Range</label>
@@ -242,9 +240,6 @@
 
             <label for="pill">Button</label>
             <button class="pill" name="pill" id="pill">Button .pill</button>
-
-            <label for="menu">Menu</label>
-            <button type="menu" name="menu" id="menu">Menu</button>
 
             <label for="reset">Reset</label>
             <button type="reset" name="reset" id="reset">Reset</button>
