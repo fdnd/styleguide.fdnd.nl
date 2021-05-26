@@ -146,6 +146,7 @@ body > header > h1 > em {
   margin-left: 1rem;
   font-size: .5em;
   color: var(--turquoise);
+  margin-left: -2rem;
 }
 
 /* <NAV> */
