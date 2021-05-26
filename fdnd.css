@@ -142,7 +142,7 @@ body > nav {
 body > nav ul {
   margin: 0;
   padding: 0;
-  display: inline;
+  display: flex;
   list-style:none;
 }
 body > nav ul li {
@@ -433,6 +433,9 @@ a.icon svg {
   body > nav > div {
     position: fixed;
     max-width:25rem
+  }
+  body > nav ul {
+    flex-direction:column;
   }
   
   footer {
