@@ -138,14 +138,14 @@ body > header > h1 > abbr {
 }
 
 body > header > h1 > em {
-  border: 3px solid var(--highlight-primary);
+  border: 3px solid var(--turquoise);
   font-weight: 100;
   border-radius: calc(4 * var(--radius));
   padding: .5rem 2rem;
-  box-shadow: -1rem .5rem 0 0 var(--highlight-primary);
+  box-shadow: -1rem .5rem 0 0 var(--turquoise);
   margin-left: 1rem;
   font-size: .5em;
-  color: var(--highlight-primary);
+  color: var(--turquoise);
 }
 
 /* <NAV> */
