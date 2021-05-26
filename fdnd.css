@@ -122,6 +122,11 @@ body > header > h1 {
   color: var(--lavender);
   line-height: 1.25; /* needed for subbrand */
   position: relative;
+  color: var(--turquoise);
+  background: var(--blueberry);
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
 }
 body > header > h1 > abbr {
   text-decoration: none;
@@ -130,6 +135,17 @@ body > header > h1 > abbr {
   font-size: 10rem;
   top:-5rem;
   left:-.5rem
+}
+
+body > header > h1 > em {
+  border: 3px solid var(--highlight-primary);
+  font-weight: 100;
+  border-radius: calc(4 * var(--radius));
+  padding: .5rem 2rem;
+  box-shadow: -1rem .5rem 0 0 var(--highlight-primary);
+  margin-left: 1rem;
+  font-size: .5em;
+  color: var(--highlight-primary);
 }
 
 /* <NAV> */
@@ -265,9 +281,8 @@ main h1 {
   font-weight: bold;
   flex-basis: 100%;
   order: 3;
-  color: var(--turquoise);
-  background: var(--blueberry);
 }
+
 main > article > h2:first-of-type,
 main > section > h2:first-of-type {
   margin: -7.5rem 0 3.5rem 0;
