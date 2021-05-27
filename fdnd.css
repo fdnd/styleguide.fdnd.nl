@@ -263,7 +263,7 @@ body > nav > a:focus {
 /* Block level elements in main */
 main > article,
 main > section {
-  margin: 8rem 0 10rem;
+  margin: 2rem 0 2rem 0;
   padding: 2rem;
   background: var(--turquoise);
   color: var(--blueberry);
@@ -278,17 +278,43 @@ main h1 {
   order: 3;
 }
 
+/* Experiment */
 main > article > h2:first-of-type,
 main > section > h2:first-of-type {
-  margin: -7.5rem 0 3.5rem 0;
-  padding: 0;
-  font-size: calc(1.5em + 1.5vw);
+  margin: -2rem 0 2rem -2rem;
+  padding: 0 1rem 1rem 0;
+  position: relative;
+  width: fit-content;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(1.5rem + 1.5vw);
   font-weight: bold;
-  flex-basis: 100%;
-  order: 3;
-  color: var(--turquoise);
+  color: var(--white);
   background: var(--blueberry);
+  border-bottom-right-radius: var(--rounded);
+  z-index: 2;
 }
+main > article > h2:first-of-type:before,
+main > section > h2:first-of-type:before,
+main > article > h2:first-of-type:after,
+main > section > h2:first-of-type:after {
+  content: '';
+  position: absolute;
+  background-color: var(--turquoise);
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
+}
+main > article > h2:first-of-type:before,
+main > section > h2:first-of-type:before {
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+main > article > h2:first-of-type:after,
+main > section > h2:first-of-type:after {
+  right: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+/* /Experiment */
 main h3 {
   margin: .5rem 0;
   font-size: 2.4rem;
