@@ -507,7 +507,7 @@ a.icon svg {
   body {
     padding: 1rem;
     display: grid;
-    grid-template-columns: auto 20rem;
+    grid-template-columns: minmax(20rem, 50rem) 20rem;
     grid-template-areas:
       "header header"
       "main nav"
@@ -537,7 +537,7 @@ a.icon svg {
 @media (min-width: 90rem) {
   body {
     display: grid;
-    grid-template-columns: 60rem 30rem auto;
+    grid-template-columns: minmax(20rem, 50rem) 20rem auto;
     grid-template-areas:
       "header header header"
       "main nav ."
