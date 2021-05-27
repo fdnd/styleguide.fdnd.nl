@@ -66,18 +66,14 @@ body:after {
   display: block;
   position: absolute;
   white-space: pre-wrap;
-
   width: 26.7rem;
   height: 2.6rem;
   left: 3rem;
-
   background-position: center left;
   background-size: 10rem;
-
   font-size: .9rem;
   line-height: 1rem;
   color: var(--white);
-
   z-index: 0;
 }
 body:before {
@@ -111,7 +107,6 @@ figure {
 figcaption {
   font-style: italic;
 }
-
 
 /* <HEADER> */
 body > header > h1 {
@@ -304,12 +299,14 @@ main > section > h2:first-of-type:after {
 }
 main > article > h2:first-of-type:before,
 main > section > h2:first-of-type:before {
-  bottom: calc(-2 * var(--rounded));
+  top: 0;
+  right: calc(-1 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
 }
 main > article > h2:first-of-type:after,
 main > section > h2:first-of-type:after {
-  right: calc(-1 * var(--rounded));
+  left: 0;
+  bottom: calc(-2 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
 }
 main h3 {
