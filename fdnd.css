@@ -247,6 +247,7 @@ body > nav > a {
   right: 1rem;
   color: var(--lavender);
   border-color: var(--lavender);
+  z-index: 3;
 }
 body > nav > a:hover,
 body > nav > a:focus {
@@ -264,6 +265,7 @@ main > section {
   color: var(--blueberry);
   border-radius: var(--rounded);
 }
+/* main h1 should be in local.css? */
 main h1 {
   margin: 1rem 0 0 0;
   padding: 0;
@@ -272,7 +274,6 @@ main h1 {
   flex-basis: 100%;
   order: 3;
 }
-
 main > article > h2:first-of-type,
 main > section > h2:first-of-type {
   margin: -2rem 0 2rem -2rem;
@@ -408,18 +409,61 @@ form textarea {
 form button {
   content: '';
 }
+
+
 /* footer */
-footer {
-  padding:2rem;
-  margin-bottom: 2rem;
+footer nav {
+  margin: 0 0 5rem 0;
+  padding: 2rem;
+  color: var(--blueberry);
+  border: 1px solid var(--lavender);
+  border-radius: var(--rounded);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 footer h2 {
-  font-size: 3.2em;
+  margin: calc(-2rem - 1px) calc(-2rem - 1px) 2rem 0;
+  padding: 0 0 1rem 1rem;
+  position: relative;
+  width: fit-content;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(1.5rem + 1.5vw);
+  color: var(--lavender);
+  background: var(--blueberry);
+  border-left: 1px solid var(--lavender);
+  border-bottom: 1px solid var(--lavender);
+  border-bottom-left-radius: var(--rounded);
+  z-index: 2;
 }
+/* // */
+footer h2:before,
+footer h2:after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top: 1px solid var(--lavender);
+  border-right: 1px solid var(--lavender);
+  border-top-right-radius: var(--rounded);
+}
+footer h2:before {
+  top: 0;
+  left: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+footer h2:after {
+  right: 0;
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+/* // */
 footer a {
-  color:white
+  color: var(--lavender);
 }
 footer ul {
+  width: 100%;
   list-style:none;
   display:flex;
   flex-wrap:wrap;
@@ -427,6 +471,8 @@ footer ul {
 footer ul li {
   margin-right: 1rem;
 }
+
+
 
 /* utility classes */
 ul.flat {
@@ -465,7 +511,7 @@ a.icon svg {
     grid-template-areas:
       "header header"
       "main nav"
-      "footer footer";
+      "footer .";
   }
   header {
     grid-area: header;
@@ -484,7 +530,6 @@ a.icon svg {
   body > nav ul {
     flex-direction:column;
   }
-  
   footer {
     grid-area: footer;
   }
@@ -496,7 +541,7 @@ a.icon svg {
     grid-template-areas:
       "header header header"
       "main nav ."
-      "footer footer footer";
+      "footer . .";
   }
   body > nav > a {
       left: 62rem;
