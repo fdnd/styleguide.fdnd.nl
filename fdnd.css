@@ -118,6 +118,7 @@ body > header > h1 {
   line-height: 1.25; /* needed for subbrand */
   position: relative;
   background: var(--blueberry);
+  max-width:50rem;
 }
 body > header > h1 > abbr {
   text-decoration: none;
