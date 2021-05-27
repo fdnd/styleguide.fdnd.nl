@@ -278,7 +278,6 @@ main h1 {
   order: 3;
 }
 
-/* Experiment */
 main > article > h2:first-of-type,
 main > section > h2:first-of-type {
   margin: -2rem 0 2rem -2rem;
@@ -287,7 +286,6 @@ main > section > h2:first-of-type {
   width: fit-content;
   font-size: calc(1.5rem + 1.5vw);
   line-height: calc(1.5rem + 1.5vw);
-  font-weight: bold;
   color: var(--white);
   background: var(--blueberry);
   border-bottom-right-radius: var(--rounded);
@@ -314,7 +312,6 @@ main > section > h2:first-of-type:after {
   right: calc(-1 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
 }
-/* /Experiment */
 main h3 {
   margin: .5rem 0;
   font-size: 2.4rem;
