@@ -299,7 +299,7 @@ main > article > h2:first-of-type:after,
 main > section > h2:first-of-type:after {
   content: '';
   position: absolute;
-  background-color: var(--turquoise);
+  background-color: transparent;
   width: var(--rounded);
   height: calc(2 * var(--rounded));
   border-top-left-radius: var(--rounded);
