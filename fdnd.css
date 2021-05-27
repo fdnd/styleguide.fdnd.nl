@@ -425,7 +425,7 @@ footer nav {
 }
 footer h2 {
   margin: calc(-2rem - 1px) calc(-2rem - 1px) 2rem 0;
-  padding: 0 0 1rem 1rem;
+  padding: 0 2rem 1rem 1rem;
   position: relative;
   width: fit-content;
   font-size: calc(1.5rem + 1.5vw);
