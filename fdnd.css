@@ -265,7 +265,7 @@ main > section {
   color: var(--blueberry);
   border-radius: var(--rounded);
 }
-/* main h1 should be in local.css? */
+/* main h1 should be in local.css? only used in styleguide.fdnd.nl */
 main h1 {
   margin: 1rem 0 0 0;
   padding: 0;
@@ -415,7 +415,7 @@ form button {
 footer nav {
   margin: 0 0 5rem 0;
   padding: 2rem;
-  color: var(--blueberry);
+  color: var(--lavender);
   border: 1px solid var(--lavender);
   border-radius: var(--rounded);
   display: flex;
@@ -436,7 +436,6 @@ footer h2 {
   border-bottom-left-radius: var(--rounded);
   z-index: 2;
 }
-/* // */
 footer h2:before,
 footer h2:after {
   content: '';
@@ -458,7 +457,9 @@ footer h2:after {
   bottom: calc(-2 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
 }
-/* // */
+footer p {
+  margin: 1rem 0;
+}
 footer a {
   color: var(--lavender);
 }
@@ -471,8 +472,6 @@ footer ul {
 footer ul li {
   margin-right: 1rem;
 }
-
-
 
 /* utility classes */
 ul.flat {
