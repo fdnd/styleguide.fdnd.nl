@@ -20,6 +20,7 @@ https://github.com/fdnd/styleguide/issues */
 	--lavender: #a675f5;
   --rounded:.5rem;
   --pilled: 2rem;
+  --shadow: .3rem;
 }
 
 /* Partial Meyer's CSS Reset v2.0 http://meyerweb.com/eric/tools/css/reset/ */
@@ -95,7 +96,7 @@ body:after {
 header,
 main,
 footer {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 a {
   color: var(--white);
@@ -109,33 +110,91 @@ figcaption {
 }
 
 /* <HEADER> */
-body > header > h1 {
-  margin: 7.5rem 2rem 1rem;
-  font-size: 5rem;
-  font-weight: bold;
-  flex-basis: 100%;
-  color: var(--lavender);
-  line-height: 1.25; /* needed for subbrand */
+body > header {
   position: relative;
+  margin: 5rem 0 1rem 0;
+  padding-top: 56.25%;
+  background-image: url('./IMG_9718.jpg');
+  background-size: cover;
+  border-radius: var(--rounded);
+}
+/* The actual title */
+body > header > h1 > span {
+  display: block;
+  position: absolute;
+  bottom: 0; left: 0;
+  padding: 1rem 2rem 0 2rem;
   background: var(--blueberry);
-  max-width:50rem;
-}
-body > header > h1 > abbr {
+  border-top-right-radius: var(--pilled);
+  color: var(--lavender);
+  font-size: 3rem;
   text-decoration: none;
-  position:absolute;
-  opacity:.15;
-  font-size: 10rem;
-  top:-5rem;
-  left:-.5rem
 }
-body > header > p {
-  margin-left:2rem;
-  margin-right:2rem;
+body > header > h1 > span:before,
+body > header > h1 > span:after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-bottom-left-radius: var(--rounded);
+}
+body > header > h1 > span:before {
+  top: calc(-2 * var(--rounded));
+  left: 0;
+  box-shadow: 0 var(--rounded) 0 0 var(--blueberry);
+}
+body > header > h1 > span:after {
+  right: calc(-1 * var(--rounded));
+  bottom: 0;
+  box-shadow: 0 var(--rounded) 0 0 var(--blueberry);
+}
+/* FDND abbr (with a span in it) */
+body > header > h1 > abbr {
+  position: absolute;
+  padding: 0 0 1rem 1rem;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  background: var(--blueberry);
+  text-decoration: none;
+  border-bottom-left-radius: var(--rounded);
+  /* border-bottom-left-radius: var(--pilled); */
+}
+body > header > h1 > abbr:before,
+body > header > h1 > abbr:after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-right-radius: var(--rounded);
+}
+body > header > h1 > abbr:before {
+  top: 0;
+  left: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+body > header > h1 > abbr:after {
+  right: 0;
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+}
+body > header > h1 > abbr > span {
+  display: block;
+  padding: .5rem 1.2rem;
+  border: 1px solid var(--turquoise);
+  /* border-radius: var(--pilled); */
+  border-radius: var(--rounded);
+  box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--turquoise);
+  color: var(--turquoise);
+  font-size: 2rem;
+  text-transform: lowercase;
 }
 
 /* <NAV> */
 body > nav {
-  margin: 0 0 0 2rem;
+  margin: 0;
   padding: 0;
 }
 body > nav h2 { 
@@ -269,15 +328,6 @@ main > section {
   background: var(--turquoise);
   color: var(--blueberry);
   border-radius: var(--rounded);
-}
-/* main h1 should be in local.css? only used in styleguide.fdnd.nl */
-main h1 {
-  margin: 1rem 0 0 0;
-  padding: 0;
-  font-size: 3.2rem;
-  font-weight: bold;
-  flex-basis: 100%;
-  order: 3;
 }
 main > article > h2:first-of-type,
 main > section > h2:first-of-type {
@@ -415,7 +465,6 @@ form button {
   content: '';
 }
 
-
 /* footer */
 footer nav {
   margin: 0 0 5rem 0;
@@ -469,6 +518,7 @@ footer a {
   color: var(--lavender);
 }
 footer ul {
+  margin: 2rem 0;
   width: 100%;
   list-style:none;
   display:flex;
@@ -513,7 +563,7 @@ a.icon svg {
     display: grid;
     grid-template-columns: minmax(20rem, 50rem) 20rem;
     grid-template-areas:
-      "header header"
+      "header ."
       "main nav"
       "footer .";
   }
@@ -543,7 +593,7 @@ a.icon svg {
     display: grid;
     grid-template-columns: minmax(20rem, 50rem) 20rem auto;
     grid-template-areas:
-      "header header header"
+      "header . ."
       "main nav ."
       "footer . .";
   }
