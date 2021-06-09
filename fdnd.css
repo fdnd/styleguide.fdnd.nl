@@ -373,7 +373,12 @@ main h3 {
   color: var(--blueberry);
 }
 main h4 {
-  margin: 1.3rem 0;
+  margin: 1.4rem 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+main h5 {
+  margin: 0;
   font-weight: bold;
 }
 main p {
