@@ -451,18 +451,59 @@ main time {
 }
 
 /* <FORM> */
-form label,
+/* Implementing https://uxdesign.cc/8-ways-to-make-forms-more-user-friendly-50f3f22c708c */
+form {
+  padding: 1rem;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  border: var(--blueberry) 1px solid;
+  border-radius: var(--rounded);
+}
+form fieldset {
+  /* background-color: var(--white); */
+  padding-left: .4rem;
+}
+form fieldset + fieldset {
+  margin-top: 1rem;
+}
+form fieldset legend {
+  margin-left: -.4rem;
+  font-weight: bold;
+}
+form label {
+  display: block;
+  font-size: .9rem;
+}
+form label span:before {
+  content: '- ';
+}
+form label span {
+  font-size: .8rem;
+  font-style: italic;
+}
+form label.attention {
+  color: red;
+  margin: .4rem 0;
+  padding: .2rem;
+  border-left: .2rem solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+}
 form input,
 form textarea,
 form button {
-  margin: .2rem 0 0 0;
   line-height: 2rem;
   border-radius: var(--rounded);
 }
-form input,
+form input[type=text],
 form textarea {
+  width: 100%;
   background: var(--white);
   border: 1px solid var(--blueberry);
+}
+form input[type=text].attention,
+form textarea.attention {
+  border-color: red;
 }
 
 form button {
