@@ -18,8 +18,8 @@ https://github.com/fdnd/styleguide/issues */
 	--blueberry: #050542;
 	--turquoise:#66e5bf;
 	--lavender: #a675f5;
-  --attention: #ff3a01;
-  --attention-transparent: #ff3a0133;
+  --attention: #ff0000;
+  --attention-background: #ffc2c2;
   --call-to-action: #FFFC86;
   --rounded:.5rem;
   --pilled: 2rem;
@@ -460,6 +460,7 @@ form {
   max-width: 24rem;
   display: flex;
   flex-direction: column;
+  background-color: var(--white);
   border: var(--blueberry) 1px solid;
   border-radius: var(--rounded);
   box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--blueberry);
@@ -494,7 +495,7 @@ form label.attention {
   margin: .4rem 0;
   padding: .2rem;
   border-left: .2rem solid var(--attention);
-  background-color: var(--attention-transparent);
+  background-color: var(--attention-background);
 }
 form input,
 form textarea,
