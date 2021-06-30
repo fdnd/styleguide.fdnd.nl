@@ -171,21 +171,22 @@
         <p>De opmaak van standaard formulieritems (inputs/textarea/buttons) staat in <code>fdnd.css</code> afwijkende zaken voor dit specifieke formulier staan in <code>local.css</code></p>
         <p>Richtlijnen voor het opmaken van een formulier:</p>
         <ul>
-          <li>Een kolom is genoeg!</li>
+          <li>Een kolom is meer dan genoeg</li>
           <li>Verwijder niet essentiele velden</li>
-          <li>Logische volgorde</li>
+          <li>Gebruik een logische volgorde</li>
           <li>Groepeer gerelateerde velden met een fieldset (en legend)</li>
           <li>Labels staan boven formulier items</li>
-          <li>Geen placeholder tekst</li>
+          <li>Gebruik geen placeholder tekst</li>
           <li>Optionele velden worden gemarkeerd met de tekst 'optioneel'</li>
           <li>Errors worden als lijst bovenaan weergegeven!</li>
-          <li>Errors worden onder de betreffende input fields weergegeven</li>
+          <li>Errors worden als extra label onder het betreffende input fields geplaatst</li>
           <li>Knoppen zijn beschrijvend ('meld je' aan ipv 'verder')</li>
-          <li>Primaire en secundaire knoppen worden visueel onderscheiden</li>
+          <li>Primaire en secundaire knoppen zijn visueel onderscheiden</li>
           <li>Knoppen staan onderaan links</li>
 
         </ul>
         <form>
+          <h3>Aanmeldformulier</h3>
           <fieldset>
             <legend>Persoonlijke informatie</legend>
             
@@ -193,29 +194,33 @@
             <input type="text" name="firstname" id="firstname" class="attention">
             <label for="firstname" class="attention">We hebben je voornaam nodig!</label>
             
-
             <label for="lastname">Achternaam</label>
             <input type="text" name="lastname" id="lastname">
-
           </fieldset>
 
           <fieldset>
             <legend>Contact informatie</legend>
 
-            <label for="address">Adres <span>Optioneel</span></label>
+            <label for="address">Adres</label>
             <input type="text" name="address" id="address">
 
-            <label for="city">Stad <span>Optioneel</span></label>
+            <label for="city">Stad</label>
             <input type="text" name="city" id="city">
 
-            <label for="zipcode">Postcode <span>Optioneel</span></label>
+            <label for="zipcode">Postcode</label>
             <input type="text" name="zipcode" id="zipcode">
 
             <label for="country">Land <span>Optioneel</span></label>
             <input type="text" name="country" id="country">
-
           </fieldset>
 
+          <fieldset>
+            <label for="apply"></label>
+            <input type="submit" name="apply" id="apply" value="Meld je aan voor onze opleiding!">
+          </fieldset>
+        </form>
+        
+        <form>
             <label for="checkbox1">Checkbox</label>
             <div>
               <input type="checkbox" name="checkbox" id="checkbox1">

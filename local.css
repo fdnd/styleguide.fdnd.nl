@@ -58,14 +58,6 @@ section#typography h2:not(:first-child) {
 }
 
 /* Form */
-/* form {
-  display: grid;
-  grid-template-columns: 1fr 1.168fr;
-  width: fit-content;
+form + form {
+  margin-top: 2rem;
 }
-form label {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  text-align: right;
-  padding-right: 1rem;
-} */
