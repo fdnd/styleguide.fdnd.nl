@@ -18,8 +18,8 @@ https://github.com/fdnd/styleguide/issues */
 	--blueberry: #050542;
 	--turquoise:#66e5bf;
 	--lavender: #a675f5;
-  --attention: #ff0000;
-  --attention-background: #ffc2c2;
+  --attention: #050542;
+  --attention-background: #05054233;
   --call-to-action: #FFFC86;
   --rounded:.5rem;
   --pilled: 2rem;
@@ -460,7 +460,7 @@ form {
   max-width: 24rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   border: var(--blueberry) 1px solid;
   border-radius: var(--rounded);
   box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--blueberry);
@@ -506,7 +506,7 @@ form button {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background-color: inherit;
+  background-color: #ffffff66;
 }
 form input[type=text],
 form textarea {
@@ -521,6 +521,7 @@ form textarea.attention {
 
 form button {
   border-radius: var(--pilled);
+  background: var(--turquoise);
 }
 
 /* footer */
