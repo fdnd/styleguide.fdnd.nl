@@ -511,19 +511,31 @@ form button {
 form input[type=text],
 form textarea {
   width: 100%;
-  /* background: var(--white); */
   border: 1px solid var(--blueberry);
 }
 form input[type=text].attention,
 form textarea.attention {
   border-color: var(--attention);
 }
-
-form button {
+form button,
+form input[type=submit] {
+  padding: 0 1rem;
+  font-weight: bold;
+  color: var(--turquoise);
+  background-color: var(--blueberry);
+  border: var(--turquoise) 1px solid;
   border-radius: var(--pilled);
-  background: var(--turquoise);
 }
-
+form button:hover,
+form input[type=submit]:hover {
+  margin-left: var(--shadow);
+  box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--blueberry);
+}
+form input[type=checkbox] {
+  width: 2rem; height: 2rem;
+  background-color: pink;
+  border: var(--turquoise) 1px solid;
+}
 /* footer */
 footer nav {
   margin: 0 0 5rem 0;
