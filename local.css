@@ -37,6 +37,10 @@ section#colors article p {
   font-weight: normal;
 }
 
+section#colors article h3 {
+  font-size: .4rem;
+}
+
 section#colors article div {
   width: 8rem;
   height: 8rem;
