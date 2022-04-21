@@ -126,9 +126,9 @@ body > header > h1 > span {
   display: block;
   position: absolute;
   bottom: 0; right: 0;
-  padding: 1rem 2rem 0 2rem;
+  padding: .5rem 1rem 0 1rem;
   background: var(--blueberry);
-  border-top-left-radius: var(--pilled);
+  border-top-left-radius: var(--rounded);
   color: var(--lavender);
   font-size: calc(1.5rem + 1.5vw);
   line-height: calc(1.5rem + 1.5vw);
