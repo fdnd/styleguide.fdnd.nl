@@ -117,7 +117,7 @@ body > header {
   position: relative;
   margin: 5rem 0 1rem 0;
   padding-top: 56.25%;
-  background-image: url('./IMG_9718.jpg');
+  background-image: url('./public/assets/fdnd-impression.jpg');
   background-size: cover;
   border-radius: var(--rounded);
 }
