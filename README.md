@@ -1,11 +1,12 @@
 # FDND Styleguide
 
-It's a styleguide for FDND!
+It's a styleguide for FDND using [Parcel](https://parceljs.org/)!
 
 ## Develop
 
 Start a dev environment using `npm start` which will run a basic webserver on
-localhost:1234.
+localhost:1234. Change all things needed in the `/src` folder and deploy your
+changes using the steps below.
 
 ## Deploy
 
