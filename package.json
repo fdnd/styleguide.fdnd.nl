@@ -1,0 +1,40 @@
+{
+  "name": "styleguide",
+  "version": "0.0.1",
+  "description": "It's a styleguide for FDND!",
+  "source": "src/index.html",
+  "targets": {
+    "default": {
+      "publicUrl": "https://styleguide.fdnd.nl/",
+      "distDir": "./docs"
+    }
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Run an automated test on the CSS\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdnd/styleguide.git"
+  },
+  "keywords": [
+    "node",
+    "css",
+    "html",
+    "gulp"
+  ],
+  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
+  "contributors": [
+    "Joost Faber <j.faber@hva.nl>"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fdnd/styleguide/issues"
+  },
+  "homepage": "https://github.com/fdnd/styleguide#readme",
+  "devDependencies": {
+    "parcel": "latest",
+    "parcel-namer-hashless": "^1.0.3"
+  }
+}
