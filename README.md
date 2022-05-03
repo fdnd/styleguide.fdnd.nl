@@ -1,21 +1,34 @@
 # FDND Styleguide
 
-It's a styleguide for FDND using [Parcel](https://parceljs.org/)!
+Het is een styleguide voor FDND die gebruik maakt van [Parcel](https://parceljs.org/)!
 
-## Develop
+## Ontwikkel
 
-Start a dev environment using `npm start` which will run a basic webserver on
-localhost:1234. Change all things needed in the `/src` folder and deploy your
-changes using the steps below.
+Start een ontwikkelomgeving door `npm start` uit te voeren. Hiermee wordt een
+basic webserver op `localhost:1234` opgestart. Verander all dingen die je wilt
+veranderen in de `/src` map en folder en _deploy_ jouw aanpassingen door de
+stappen hieronder te volgen.
 
 ## Deploy
 
-Running `npm run build` will generate a new version of the website including all
-optimised assests in the `/docs` folder (for GitHub pages). Make sure to point
-the `fdnd.css` file to the latest index.[hash].css file using:
+Als je tevreden bent met je aanpassingen en deze uitvoerig getest hebt voer je
+`npm run build` uit om een nieuwe geoptimaliseerde versie van de website te
+genereren. De nieuw gegenereerde versie en alle bijbehorende assets worden in
+de `/docs` map geplaatst (voor GitHub pages). Zorg dat `fdnd.css` naar de
+zojuist door jou gegenereerde `index.[hash].css` file wijst door een soft link
+aan te maken met het volgende commando:
 
 ```
 $ ln -s index.[hash].css fdnd.css
 ```
 
-Push your version to the live environment to do release your update.
+Je kunt controleren of dit gelukt is door in een editor de inhoud van `fdnd.css`
+te bekijken, als het gelukt is zie je hetzelfde als in `index.[hash].css`.
+Tenslotte push je de nieuwe versie naar de live omgeving om jouw update door te
+voeren.
+
+## Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+Dit werk is gelicenseerd onder [GNU GPLv3](./LICENSE).
