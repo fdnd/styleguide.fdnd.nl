@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>FDND Styleguide</title>
+  <meta name="description" content="Styleguide voor FDND" />
+
+  <link rel="canonical" href="https://styleguide.fdnd.nl/" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='./assets/style/fdnd.css'>
+
+  <link rel='icon' type='image/png' href='./assets/favicon.png'>
+
+  <meta property="og:title" content="FDND Styleguide" />
+  <meta property="og:description" content="Styleguide pagina voor de Ad Frontend Design & Development" />
+  <meta property="og:site_name" content="styleguide.fdnd.nl" />
+  <meta property="og:url" content="https://styleguide.fdnd.nl" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    /* Typography */
+    section#typography h2:not(:first-child) {
+      margin: 1rem 0 0 0;
+      padding: 0;
+      font-size: 3.2rem;
+      font-weight: bold;
+      flex-basis: 100%;
+      order: 3;
+    }
+  </style>
+</head>
+
+<body class="blue-on-white">
+  <header>
+    <h1><abbr title="Frontend Design & Development"><span>FDND</span></abbr> <span>Style Guide</span></h1>
+    <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
+  </header>
+
+  <nav>
+    <div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="colors.html">Kleuren</a></li>
+        <li><a class="active" href="type.html">Typografie</a></li>
+        <li><a href="images.html">Beeld</a></li>
+        <li><a href="forms.html">Formulieren</a></li>
+      </ul>
+    </div>
+
+    <a href="#">Back to top</a>
+  </nav>
+
+  <main>
+
+    <!-- List of all typographic items -->
+    <section class="white-on-blue">
+      <h2>Typografie</h2>
+
+      <h2>Heading 2 <em class="note">(1x per section/article)</em></h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+
+      <p>Dit is een kale alineatekst. De Ad Frontend Design & Development (FDND) is een praktijkgerichte, tweejarige hbo-opleiding waar studenten in worden opgeleid tot Frontend professionals. Frontenders ontwerpen en maken interactieve, toegankelijke toepassingen
+        voor het web. Dit maakt dat een frontender opereert binnen het gebied van software development, interactieontwerp en digitaal visueel ontwerp.</p>
+      <p> Dit is een <a href="#">text link</a>, deze kunnen worden toegepast in een alinea of</p>
+      <a href="#">Op zichzelf staand</a>
+      <p>Dit zijn twee afkortingen: <abbr title="Associate degree">Ad</abbr> <abbr title="Frontend Design & Development">FDND</abbr>. Qua opmaak veranderd er niets maar je kunt erover hoveren om de title te zien.</p>
+      <p>Dit is een <b>b(ring to attention)</b> element, gebruik deze om aandacht te vestigen zonder semantische waarde.</p>
+      <p>Dit is een inline <cite>cite</cite> element.</p>
+      <p>Dit is een inline code element: <code>mv ./public_html/super.html ./public_html/awesome.html</code>.</p>
+      <!-- <dfn>? -->
+      <p>Dit is een <em>em(phasize)</em> element, hiermee wordt semantische nadruk gelegd. Kan genest worden, elk niveau krijgt dan extra nadruk.</p>
+      <p>Dit hieronder is een image:</p>
+      <img src="https://via.placeholder.com/640x480r.png/050840/7ce7c9" alt="640x480 placeholder image">
+      <p>Dit is een <i>i(diomatic text)</i> element, gebruik deze voor technische terminologie, jargon etc. zonder semantische waarde.</p>
+      <p>Dit is een <mark>(ge)mark(eerd)</mark> stuk tekst.</p>
+      <p>Dit is een <q>inline quote</q>.</p>
+      <p>Dit is een <strong>strong(ly)</strong> benadrukt element met sterke urgentie qua semantiek.</p>
+      <p>Dit is <sup>superschrift</sup> en dit is <sub>subschrift</sub> voor voetnoten of verwijzing.</p>
+      <p>Dit is een time element <time datetime="2021-04-15">15 april 2021</time></p>
+
+      <ul>
+        <li>Dit is een</li>
+        <li>ongeordende</li>
+        <li>lijst items.</li>
+      </ul>
+
+      <ul class="flat">
+        <li>
+          <a href="#" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+              </svg> Link 1
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+              </svg> Link 2
+
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+              </svg> Link 3
+
+          </a>
+        </li>
+      </ul>
+
+      <ol>
+        <li>Dit is een</li>
+        <li>geordende</li>
+        <li>lijst items.</li>
+      </ol>
+    </section>
+    
+  </main>
+
+  <footer>
+    <nav>
+      <h2>Microsites</h2>
+      <p>FDND maakt gebruik van een heleboel microsites in plaats van één grote
+      website met een ingewikkelde informatiestructuur. Microsites zijn kleine
+      websites met een specifiek doel ter ondersteuning van een campagne,
+      informatie over een product of dienst.</p>
+      <ul>
+        <li><a href="https://fdnd.nl">FDND.nl</a></li>
+        <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
+        <li><a href="https://programma.fdnd.nl">Programma</a></li>
+        <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
+        <li><a href="https://partners.fdnd.nl">Partners</a></li>
+        <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
+        <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>

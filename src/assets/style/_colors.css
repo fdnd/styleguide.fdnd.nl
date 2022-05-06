@@ -1,0 +1,276 @@
+/*88888888 8888888b.  888b    888 8888888b.
+888        888  "Y88b 8888b   888 888  "Y88b
+888        888    888 88888b  888 888    888
+8888888    888    888 888Y88b 888 888    888
+888        888    888 888 Y88b888 888    888
+888        888    888 888  Y88888 888    888
+888        888  .d88P 888   Y8888 888  .d88P
+888        8888888P"  888    Y888 8888888P"
+
+This file defines our six color schemes:
+.blue-on-green
+.blue-on-purple
+.blue-on-white
+.green-on-blue
+.purple-on-blue
+.white-on-blue
+
+Each scheme has it's own nested section where
+all colors throughout the system are defined.
+Please use this file for colors only! */
+
+/* Standard when no color scheme class is set */
+body {
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--blue);
+
+  /* Inherit border- and background-color */
+  & main,
+  & footer,
+  & footer h2,
+  & article,
+  & section,
+  & figure,
+  & figcaption,
+  & div,
+  & nav,
+  & nav ul,
+  & nav ul li {
+    border-color: inherit;
+    background-color: inherit;
+  }
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--white);
+      background-color: var(--blue);
+      border-color: var(--white);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--blue);
+      background-color: var(--white);
+      border-color: var(--blue);
+    }
+  }
+  /* Needs specificity or it will be overwritten below */
+  & > nav li a.active,
+  & > nav li a.active:hover,
+  &.blue-on-green > nav li a.active,
+  &.blue-on-green > nav li a.active:hover,
+  &.blue-on-purple > nav li a.active,
+  &.blue-on-purple > nav li a.active:hover,
+  &.blue-on-white > nav li a.active,
+  &.blue-on-white > nav li a.active:hover,
+  &.green-on-blue > nav li a.active,
+  &.green-on-blue > nav li a.active:hover,
+  &.purple-on-blue > nav li a.active,
+  &.purple-on-blue > nav li a.active:hover,
+  &.white-on-blue > nav li a.active,
+  &.white-on-blue > nav li a.active :hover {
+    background: var(--highlight);
+    border-color: var(--highlight);
+    color: var(--blue);
+  }
+
+  /* Color for box-shadow on outset headings */
+  & h2,
+  & figcaption {
+    &:before,
+    &:after {
+      color: var(--blue);
+    }
+  }
+}
+
+/* BLUE ON GREEN */
+.blue-on-green {
+  color: var(--blue);
+  background-color: var(--green);
+  border-color: var(--blue);
+
+  & .blue-on-purple {
+    border-color: var(--purple);
+  }
+  & .white-on-blue {
+    border-color: var(--blue);
+  }
+  & .blue-on-white {
+    border-color: var(--white);
+  }
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--blue);
+      background-color: var(--green);
+      border-color: var(--blue);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--green);
+      background-color: var(--blue);
+      border-color: var(--green);
+    }
+  }
+
+  /* Color for box-shadow on outset headings */
+  & h2,
+  & figcaption {
+    &:before,
+    &:after {
+      color: var(--green);
+    }
+  }
+}
+
+/* BLUE-ON-PURPLE */
+.blue-on-purple {
+  color: var(--blue);
+  background-color: var(--purple);
+  border-color: var(--blue);
+
+  & .blue-on-green {
+    border-color: var(--purple);
+  }
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--blue);
+      background-color: var(--purple);
+      border-color: var(--blue);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--purple);
+      background-color: var(--blue);
+      border-color: var(--purple);
+    }
+  }
+
+  /* Color for box-shadow on outset headings */
+  & h2,
+  & figcaption {
+    &:before,
+    &:after {
+      color: var(--purple);
+    }
+  }
+}
+
+/* BLUE-ON-WHITE */
+.blue-on-white {
+  color: var(--blue);
+  background-color: var(--white);
+  border-color: var(--blue);
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--blue);
+      background-color: var(--white);
+      border-color: var(--blue);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--white);
+      background-color: var(--blue);
+      border-color: var(--white);
+    }
+  }
+
+  /* Color for box-shadow on outset headings */
+  & h2,
+  & figcaption {
+    &:before,
+    &:after {
+      color: var(--white);
+    }
+  }
+}
+
+/* GREEN-ON-BLUE */
+.green-on-blue {
+  color: var(--green);
+  background-color: var(--blue);
+  border-color: var(--green);
+
+  & .green-on-blue {
+    border-color: var(--blue);
+  }
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--green);
+      background-color: var(--blue);
+      border-color: var(--green);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--blue);
+      background-color: var(--green);
+      border-color: var(--blue);
+    }
+  }
+}
+
+/* PURPLE-ON-BLUE */
+.purple-on-blue {
+  color: var(--purple);
+  background-color: var(--blue);
+  border-color: var(--purple);
+
+  /* <nav> */
+  & > nav li {
+    &:nth-of-type(odd) a,
+    &:nth-of-type(even) a:hover,
+    &:nth-of-type(even) a:focus {
+      color: var(--purple);
+      background-color: var(--blue);
+      border-color: var(--purple);
+    }
+    &:nth-of-type(even) a,
+    &:nth-of-type(odd) a:hover,
+    &:nth-of-type(odd) a:focus {
+      color: var(--blue);
+      background-color: var(--purple);
+      border-color: var(--blue);
+    }
+  }
+}
+
+/* WHITE-ON-BLUE */
+.white-on-blue {
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--white);
+
+  & .white-on-blue {
+    border-color: var(--white);
+  }
+
+  & .green-on-blue {
+    border-color: var(--green);
+  }
+
+  /* <nav> uses the standard colors */
+}

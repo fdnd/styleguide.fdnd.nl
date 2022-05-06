@@ -1,0 +1,140 @@
+main {
+  & section,
+  & article {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--pilled);
+  }
+
+  & > section,
+  & > article {
+    padding: 1rem;
+
+    &.blue-on-white,
+    &.blue-on-purple,
+    &.blue-on-green,
+    &.white-on-blue,
+    &.purple-on-blue,
+    &.green-on-blue {
+      padding: 2rem;
+      border-radius: var(--pilled);
+    }
+  }
+}
+
+/* Figure directly in main */
+main,
+footer {
+  & > figure {
+    background: inherit;
+    border-radius: var(--pilled);
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--pilled);
+    }
+
+    & figcaption {
+      /* position on the bottom edge */
+      margin: calc(-4.5rem + 1px) 0 0 0;
+      padding: 2rem 1.5rem 1rem 0.4rem;
+      position: relative;
+      width: fit-content;
+      line-height: 1rem;
+      border-top-right-radius: var(--pilled);
+
+      & span {
+        padding: 0.5rem 1rem;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: var(--pilled);
+        white-space: nowrap;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: transparent;
+
+        width: var(--pilled);
+        height: calc(1.3 * var(--pilled));
+        border-bottom-left-radius: var(--pilled);
+
+        bottom: calc(2 * var(--pilled));
+        left: 0;
+        box-shadow: -0.35rem calc(0.3 * var(--pilled)) 0 0.16rem;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        background-color: transparent;
+
+        width: var(--pilled);
+        height: calc(1.2 * var(--pilled));
+        border-bottom-left-radius: var(--pilled);
+
+        bottom: 0;
+        right: calc(-1 * var(--pilled));
+        box-shadow: -0.35rem calc(0.3 * var(--pilled)) 0 0.16rem;
+      }
+    }
+  }
+}
+
+/* Footer Microsites item */
+footer {
+  & nav {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: var(--rounded);
+    border-width: 1px;
+    border-style: solid;
+  }
+  & h2 {
+    margin: calc(-2rem - 1px) calc(-2rem - 1px) 1rem 2rem;
+    padding: 0 0 1rem 1rem;
+    position: relative;
+    width: fit-content;
+    font-size: calc(1.5rem + 1.5vw);
+    line-height: calc(1.5rem + 1.5vw);
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-bottom-left-radius: var(--rounded);
+    z-index: 2;
+
+    float: right;
+    shape-outside: margin-box;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+
+      width: var(--rounded);
+      height: calc(2 * var(--rounded));
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-top-right-radius: var(--rounded);
+      border-color: inherit;
+    }
+    &:before {
+      top: 0;
+      left: calc(-1 * var(--rounded));
+      box-shadow: 0 calc(-1 * var(--rounded)) 0 0;
+    }
+    &:after {
+      right: 0;
+      bottom: calc(-2 * var(--rounded));
+      box-shadow: 0 calc(-1 * var(--rounded)) 0 0;
+    }
+  }
+  & ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+  }
+}

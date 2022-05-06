@@ -127,3 +127,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* Some additions to change default behaviour */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,125 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+header,
+main,
+footer {
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+p + p {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+cite {
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+em {
+  font-style: italic;
+}
+
+/* figcaption {
+  font-style: italic;
+} */
+
+i {
+  font-style: italic;
+}
+
+mark {
+  background-color: yellow;
+}
+
+q {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+sub,
+sup {
+  font-size: 0.7rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.5rem;
+}
+sup {
+  top: -0.5rem;
+}
+
+time {
+  display: inline;
+}
+
+/* Lists and such */
+main {
+  & ul {
+    margin: 1rem 0 0 1rem;
+
+    & li {
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+  }
+  & ol {
+    margin-left: 1rem;
+
+    & li {
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+  }
+}

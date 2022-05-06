@@ -1,0 +1,84 @@
+/* <FORM> */
+/* Implementing https://uxdesign.cc/8-ways-to-make-forms-more-user-friendly-50f3f22c708c */
+form {
+  padding: 1rem 1rem 2rem 1rem;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--white); */
+  border: var(--blue) 1px solid;
+  border-radius: var(--rounded);
+  box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--blue);
+}
+form h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+form fieldset {
+  padding-left: 0.4rem;
+  font-size: 0.9rem;
+}
+form fieldset + fieldset {
+  margin-top: 1rem;
+}
+form fieldset legend {
+  margin-left: -0.4rem;
+  font-weight: bold;
+}
+form label {
+  display: block;
+}
+form label span:before {
+  content: '- ';
+}
+form label span {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+form label.attention {
+  color: var(--attention);
+  margin: 0.4rem 0;
+  padding: 0.2rem;
+  border-left: 0.2rem solid var(--attention);
+  background-color: var(--attention-background);
+}
+form input,
+form textarea,
+form button {
+  line-height: 2rem;
+  border: 1px solid var(--blue);
+  border-radius: var(--rounded);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #ffffff66;
+}
+form input[type='text'],
+form textarea {
+  width: 100%;
+  border: 1px solid var(--blue);
+}
+form input[type='text'].attention,
+form textarea.attention {
+  border-color: var(--attention);
+}
+form button,
+form input[type='submit'] {
+  padding: 0 1rem;
+  font-weight: bold;
+  color: var(--green);
+  background-color: var(--blue);
+  border: var(--green) 1px solid;
+  border-radius: var(--pilled);
+}
+form button:hover,
+form input[type='submit']:hover {
+  margin-left: var(--shadow);
+  box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--blue);
+}
+form input[type='checkbox'] {
+  width: 2rem;
+  height: 2rem;
+  background-color: pink;
+  border: var(--green) 1px solid;
+}

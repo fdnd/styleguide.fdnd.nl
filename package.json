@@ -9,6 +9,11 @@
       "distDir": "./docs"
     }
   },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build",

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
@@ -22,64 +23,62 @@
   <meta property="og:url" content="https://styleguide.fdnd.nl" />
   <meta property="og:type" content="website" />
 
-  <style></style>
+  <style>
+    
+  </style>
 </head>
-<body class="white-on-blue">
 
+<body class="purple-on-blue">
   <header>
     <h1><abbr title="Frontend Design & Development"><span>FDND</span></abbr> <span>Style Guide</span></h1>
     <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
   </header>
 
   <nav>
-    <h2>Menu</h2>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="layout.html">Layout</a></li>
-      <li><a href="colors.html">Kleuren</a></li>
-      <li><a href="type.html">Typografie</a></li>
-      <li><a href="images.html">Beeld</a></li>
-      <li><a href="forms.html">Formulieren</a></li>
-    </ul>
+    <div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="colors.html">Kleuren</a></li>
+        <li><a href="type.html">Typografie</a></li>
+        <li><a class="active" href="images.html">Beeld</a></li>
+        <li><a href="forms.html">Formulieren</a></li>
+      </ul>
+    </div>
 
     <a href="#">Back to top</a>
   </nav>
 
   <main>
 
-    <section class="blue-on-green">
-      <h2>Living style guide</h2>
-      <figure>
-        <blockquote>
-          <p> Living style guides are an important tool for web development today,
-          especially in large, complex web applications. They help document styles
-          and patterns, keep designers and developers in sync, and greatly help
-          to organize and distill complex interfaces.</p>
-        </blockquote>
-        <figcaption>Bron: <cite><a href="https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/">Creating A Living Style Guide: A Case Study</a></cite> door <a href="https://www.smashingmagazine.com/author/stevenlambert/">Steven Lambert</a>.</figcaption>
-      </figure>
-    </section>
+    <figure>
+      <img src="assets/fdnd-impression.jpg" alt="Mees en Fenna aan het werk">
+      <figcaption><span>Afbeelding met bijschrift.</span></figcaption>
+    </figure>
 
     <section class="blue-on-purple">
-      <h2>Toepassen</h2>
-      <p>Pas deze styleguide toe op een website door een link element met een
-      verwijzing naar <a href="https://styleguide.fdnd.nl/fdnd.latest.css">fdnd.latest.css</a>
-      op te nemen in jouw project.</p>
-      <p>Om <i>backwards compatible</i> te blijven worden naast bovenstaande link
-      ook verwijzingen naar specifieke releases gemaakt, hier een overzicht van
-      de historie aan releases:</p>
-      <ul>
-        <li><a href="https://styleguide.fdnd.nl/fdnd.css">fdnd.css</a>, de
-        initiële opzet van deze pagina.</li>
-      </ul>
-      <p><b>N.B.:</b> deze styleguide is nog in ontwikkeling en zodoende kan enkel
-      de initiële opzet nog gebruikt worden. Na de release van versie 1.0 komen
-      hierboven links naar meerdere versies.</p>
+      <h2>Beeld als blok</h2>
+      <p>Voeg <code>&lt;figure&gt;</code> met <code>&lt;img&gt;</code> elementen
+      direct toe aan <code>&lt;main&gt;</code> om een afbeelding als blok toe te
+      voegen.</p>
+      
+      <p>Optioneel voeg je ook een onderschrift toe door een <code>&lt;figcaption&gt;</code>
+      met een <code>&lt;span&gt;</code> toe te voegen, deze wordt  als hapje uit
+      de hoek linksonder neergezet wordt.</p>
+      
+      <p>Pas op met te lange tekst in het onderschift, probeer altijd
+      verschillende schermgroottes uit om te checken of het ook responsive goed
+      blijft werken.</p>
     </section>
+    
+    <section class="blue-on-purple col-span-2">
+      <h2>Beeld in een blok</h2>
 
-    <section class="blue-on-white">
-      <h2>Over</h2>
-      <p>Deze styleguide is mede tot stand gekomen door <cite>Lukas van Driel</cite> van <a href="https://www.q42.nl/">Q42</a>! Hij deelde zijn werkwijze en een aantal styleguides van projecten die model hebben gestaan voor onze styleguide.</p>
+      <p>Een selectie van beeldmateriaal dat gebruikt kan worden voor FDND.</p>
+      <img src="https://via.placeholder.com/640x480.png/050840/7ce7c9" alt="640x480 placeholder image">
+      <img src="https://via.placeholder.com/1024x768.png/050840/7ce7c9" alt="1024x768 placeholder image">
+      <img src="https://via.placeholder.com/1280x1024.png/050840/7ce7c9" alt="1280x1024 placeholder image">
     </section>
     
   </main>
@@ -104,4 +103,5 @@
   </footer>
 
 </body>
+
 </html>
