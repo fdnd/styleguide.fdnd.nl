@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/fdnd/styleguide#readme",
   "devDependencies": {
-    "parcel": "latest",
-    "parcel-namer-hashless": "^1.0.3"
+    "parcel": "latest"
   }
 }
