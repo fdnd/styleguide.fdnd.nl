@@ -45,6 +45,12 @@
     border-radius: var(--rounded);
     padding: 1rem;
   }
+  main > section > article > ul {
+    margin: 0;
+  }
+  main > section > article > ul > li {
+    list-style: none;
+  }
   </style>
 </head>
 
@@ -76,12 +82,12 @@
 
     <!-- List of colors -->
     <section class="blue-on-green">
-      <h3>Kleurpalet</h3>
+      <h2>Kleurpalet</h2>
       <p>Het kleurpalet bestaat uit drie kleuren die afwisselend worden gebruikt, daarnaast wordt wit gebruikt.</p>
       
       <!-- Layout in the internal style element -->
       <article data-color="050542" class="green-on-blue">
-        <h4>Blue</h4>
+        <h3>Blue</h3>
         <ul>
           <li>var(--blue)</li>
           <li>#050542</li>
@@ -91,7 +97,7 @@
       </article>
 
       <article data-color="66e5bf" class="blue-on-green">
-        <h4>Green</h4>
+        <h3>Green</h3>
         <ul>
           <li>var(--green)</li>
           <li>#66e5bf</li>
@@ -101,7 +107,7 @@
       </article>
 
       <article data-color="a675f5" class="blue-on-purple">
-        <h4>Purple</h4>
+        <h3>Purple</h3>
         <ul>
           <li>var(--purple)</li>
           <li>#a675f5</li>
@@ -111,7 +117,7 @@
       </article>
 
       <article data-color="ffffff" class="blue-on-white">
-        <h4>White</h4>
+        <h3>White</h3>
         <ul>
           <li>var(--white)</li>
           <li>#ffffff</li>
@@ -122,37 +128,39 @@
     </section>
 
     <section class="white-on-blue">
-      <h3>Contrast</h3>
+      <h2>Contrast</h2>
       <p>Bij tekst zijn niet alle kleurcombinaties mogelijk. Zorg voor genoeg
       contrast tussen voor- en achtergrond. Hieronder de combinaties die gemaakt
       mogen worden met bijbehorende classes.</p>
 
-      <article class="blue-on-white">
-        <h4>.blue-on-white</h4>
-        <p>blauwe tekst op een witte achtergrond</p>
-      </article>
-
-      <article class="blue-on-purple">
-        <h4>.blue-on-purple</h4>
-        <p>blauwe tekst op een witte achtergrond</p>
-      </article>
-
       <article class="blue-on-green">
-        <h4>.blue-on-green</h4>
+        <h3>.blue-on-green</h3>
         <p>blauwe tekst op een groene achtergrond</p>
       </article>
 
-      <article class="white-on-blue">
-        <h4>.white-on-blue</h4>
-        <p>witte tekst op een blauwe achtergrond</p>
+      <article class="green-on-blue">
+        <h3>.green-on-blue</h3>
+        <p>groene tekst op een blauwe achtergrond</p>
       </article>
+      
+      <article class="blue-on-purple">
+        <h3>.blue-on-purple</h3>
+        <p>blauwe tekst op een witte achtergrond</p>
+      </article>
+
       <article class="purple-on-blue">
-        <h4>.purple-on-blue</h4>
+        <h3>.purple-on-blue</h3>
         <p>paarse tekst op een blauwe achtergrond</p>
       </article>
-      <article class="green-on-blue">
-        <h4>.green-on-blue</h4>
-        <p>groene tekst op een blauwe achtergrond</p>
+
+      <article class="blue-on-white">
+        <h3>.blue-on-white</h3>
+        <p>blauwe tekst op een witte achtergrond</p>
+      </article>
+
+      <article class="white-on-blue">
+        <h3>.white-on-blue</h3>
+        <p>witte tekst op een blauwe achtergrond</p>
       </article>
 
     </section>
@@ -174,7 +182,7 @@
         <section class="purple-on-blue"></section>
       </article>
 
-      <p>Op een lichtpaarse of lichtgroene achtergrond kunnen alléén donkerblauwe
+      <p>Op een lichtpaarse, lichtgroene of witte achtergrond kunnen alléén donkerblauwe
       elementen worden geplaatst.</p>
 
       <article class="blue-on-green">
@@ -187,6 +195,12 @@
         <h4>Titel</h4>
         <section class="purple-on-blue"><br><br><br><br></section>
         <section class="blue-on-purple"></section>
+      </article>
+
+      <article class="blue-on-white">
+        <h4>Titel</h4>
+        <section class="white-on-blue"><br><br><br><br></section>
+        <section class="blue-on-white"></section>
       </article>
     </section>
 

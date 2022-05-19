@@ -58,7 +58,11 @@ body {
       border-color: var(--blue);
     }
   }
-  /* Needs specificity or it will be overwritten below */
+  /* Back to top */
+  & > nav a {
+    background-color: var(--blue);
+  }
+  /* <nav> items Needs specificity or they will be overwritten below */
   & > nav li a.active,
   & > nav li a.active:hover,
   &.blue-on-green > nav li a.active,
@@ -121,6 +125,10 @@ body {
       border-color: var(--green);
     }
   }
+  /* Back to top */
+  & > nav a {
+    background-color: var(--green);
+  }
 
   /* Color for box-shadow on outset headings */
   & h2,
@@ -141,6 +149,9 @@ body {
   & .blue-on-green {
     border-color: var(--purple);
   }
+  & .blue-on-purple {
+    border-color: var(--blue);
+  }
 
   /* <nav> */
   & > nav li {
@@ -159,6 +170,10 @@ body {
       border-color: var(--purple);
     }
   }
+  /* Back to top */
+  & > nav a {
+    background-color: var(--purple);
+  }
 
   /* Color for box-shadow on outset headings */
   & h2,
@@ -176,6 +191,13 @@ body {
   background-color: var(--white);
   border-color: var(--blue);
 
+  & .blue-on-white {
+    border-color: var(--blue);
+  }
+  & .blue-on-green {
+    border-color: var(--green);
+  }
+
   /* <nav> */
   & > nav li {
     &:nth-of-type(odd) a,
@@ -192,6 +214,10 @@ body {
       background-color: var(--blue);
       border-color: var(--white);
     }
+  }
+  /* Back to top */
+  & > nav a {
+    background-color: var(--white);
   }
 
   /* Color for box-shadow on outset headings */
@@ -231,6 +257,10 @@ body {
       border-color: var(--blue);
     }
   }
+  /* Back to top */
+  & > nav a {
+    background-color: var(--blue);
+  }
 }
 
 /* PURPLE-ON-BLUE */
@@ -256,6 +286,10 @@ body {
       border-color: var(--blue);
     }
   }
+  /* Back to top */
+  & > nav a {
+    background-color: var(--blue);
+  }
 }
 
 /* WHITE-ON-BLUE */
@@ -273,4 +307,50 @@ body {
   }
 
   /* <nav> uses the standard colors */
+}
+
+/* Filters to change colors on a different background,
+  used for HvA Branding and SVG images on links...
+  Generated using https://isotropic.co/tool/hex-color-to-css-filter/
+*/
+body {
+  /* From black to white */
+  &:before,
+  &:after,
+  & a:after,
+  &.blue-on-white .white-on-blue a:after {
+    filter: invert(100%) sepia(18%) saturate(0%) hue-rotate(158deg) brightness(100%) contrast(106%);
+  }
+
+  /* From black to blue */
+  &.blue-on-white:before, /* HvA Logo */
+  &.blue-on-white:after, /* HvA Payoff */
+  &.blue-on-white a:after, /* Link icons */
+  & .blue-on-white a:after, /* Link icons */
+  &.blue-on-purple:before,
+  &.blue-on-purple:after,
+  &.blue-on-purple a:after,
+  & .blue-on-purple a:after,
+  &.blue-on-green:before,
+  &.blue-on-green:after,
+  &.blue-on-green a:after,
+  & .blue-on-green a:after {
+    filter: invert(7%) sepia(34%) saturate(5592%) hue-rotate(235deg) brightness(101%) contrast(115%);
+  }
+
+  /* From black to purple */
+  &.purple-on-blue:before,
+  &.purple-on-blue:after,
+  &.purple-on-blue a:after,
+  & .purple-on-blue a:after {
+    filter: invert(60%) sepia(66%) saturate(4289%) hue-rotate(228deg) brightness(101%) contrast(92%);
+  }
+
+  /* From black to green */
+  &.green-on-blue:before,
+  &.green-on-blue:after,
+  &.green-on-blue a:after,
+  & .green-on-blue a:after {
+    filter: invert(80%) sepia(28%) saturate(677%) hue-rotate(107deg) brightness(98%) contrast(89%);
+  }
 }

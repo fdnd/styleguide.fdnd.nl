@@ -1,9 +1,11 @@
 main {
-  & section,
-  & article {
+  & section section,
+  & article section,
+  & section article,
+  & article article {
     border-width: 1px;
     border-style: solid;
-    border-radius: var(--pilled);
+    border-radius: var(--rounded);
   }
 
   & > section,
@@ -17,6 +19,9 @@ main {
     &.purple-on-blue,
     &.green-on-blue {
       padding: 2rem;
+
+      border-width: 1px;
+      border-style: solid;
       border-radius: var(--pilled);
     }
   }

@@ -35,12 +35,13 @@ body:before {
 /* HvA Logo (top) and program specific name */
 @media (min-width: 30rem) {
   body:before {
+    color: #000;
     content: 'Frontend \A Design & Development';
     padding: 0.04rem 1rem 0.3rem 12rem;
     top: 1rem;
     background: url(../hvalogo.svg) no-repeat center left;
     background: url(../hvalogo.svg) no-repeat center left,
-      linear-gradient(90deg, transparent calc(50% - 2px), #fff calc(50%), transparent calc(50%));
+      linear-gradient(90deg, transparent calc(50% - 2px), #000 calc(50%), transparent calc(50%));
   }
 }
 
@@ -49,26 +50,4 @@ body:after {
   height: 1.2rem;
   bottom: 1rem;
   background: url(../hvapayoff.svg) no-repeat center left;
-}
-
-/* Use filters to change color on a different background */
-/* Generated using https://isotropic.co/tool/hex-color-to-css-filter/ */
-body.blue-on-white:before,
-body.blue-on-white:after,
-body.blue-on-purple:before,
-body.blue-on-purple:after,
-body.blue-on-green:before,
-body.blue-on-green:after {
-  filter: brightness(0) saturate(100%) invert(7%) sepia(34%) saturate(5592%) hue-rotate(235deg)
-    brightness(101%) contrast(115%);
-}
-body.purple-on-blue:before,
-body.purple-on-blue:after {
-  filter: brightness(0) saturate(100%) invert(60%) sepia(66%) saturate(4289%) hue-rotate(228deg)
-    brightness(101%) contrast(92%);
-}
-body.green-on-blue:before,
-body.green-on-blue:after {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(28%) saturate(677%) hue-rotate(107deg)
-    brightness(98%) contrast(89%);
 }
