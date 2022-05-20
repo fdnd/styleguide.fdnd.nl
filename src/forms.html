@@ -54,7 +54,6 @@
   </nav>
 
   <main>
-    <!-- <h2>Formulieren</h2> -->
     
     <section class="blue-on-green">
       <h2>Aandachtspunten</h2>
@@ -78,7 +77,7 @@
     <section class="blue-on-white">
       <h2>Voorbeeld</h2>
       <p>De aandachtspunten zijn in onderstaand formulier toegepast. ProTip: Bekijk de broncode!</p>
-      <form>
+      <form onsubmit="event.preventDefault()">
         <h3>Aanmeldformulier</h3>
         <fieldset>
           <legend>Persoonlijke informatie</legend>
@@ -122,7 +121,7 @@
       <p>Als je het juiste invoerveld gebruikt bedien je de <em>auto aanvullen</em>
       opties van de browser van de gebruiker.</p>
 
-      <form>
+      <form onsubmit="event.preventDefault()">
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
 
@@ -153,7 +152,7 @@
       <h2>Knoppen</h2>
       <p>Een opsomming van alle typen knoppen.</p>
 
-      <form>
+      <form onsubmit="event.preventDefault()">
         <label for="button">Button</label>
         <button name="button" id="button">Button</button>
 
@@ -175,7 +174,7 @@
       <h2>Data</h2>
       <p>Formuliervelden die te maken hebben met tijd en datum.</p>
       <p>Let op: deze zijn <a href="https://caniuse.com/input-datetime">niet overal goed ondersteund</a>.</p>
-      <form>
+      <form onsubmit="event.preventDefault()">
         <label for="date">Date</label>
         <input type="date" name="date" id="date">
 
@@ -190,12 +189,11 @@
       </form>
     </section>
 
-    <!-- Buttons etc -->
     <section class="blue-on-white">
       <h2>Overig</h2>
       <p>Tenslotte zijn er nog een paar andere invoervelden.</p>
 
-      <form>
+      <form onsubmit="event.preventDefault()">
         <label for="checkbox1">Checkbox</label>
         <div>
           <input type="checkbox" name="checkbox" id="checkbox1">
@@ -205,10 +203,6 @@
 
         <label for="color">Color</label>
         <input type="color" name="color" id="color">
-
-        
-
-        
 
         <label for="file">File</label>
         <input type="file" name="file" id="file">
@@ -227,8 +221,6 @@
 
         <label for="range">Range</label>
         <input type="range" name="range" id="range">
-
-        
 
       </form>
     </section>
@@ -254,9 +246,5 @@
     </nav>
   </footer>
 
-  <script>
-    // Prevent all forms from being sent..
-    document.querySelector('form').addEventListener('submit', event => event.preventDefault())
-  </script>
 </body>
 </html>

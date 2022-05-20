@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build --detailed-report",
     "test": "echo \"Run an automated test on the CSS\" && exit 1"
   },
   "repository": {
@@ -27,7 +27,7 @@
     "node",
     "css",
     "html",
-    "gulp"
+    "parcel"
   ],
   "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
   "contributors": [
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/fdnd/styleguide#readme",
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "nightly"
   }
 }
