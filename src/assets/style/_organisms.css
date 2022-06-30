@@ -1,13 +1,4 @@
 main {
-  & section section,
-  & article section,
-  & section article,
-  & article article {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: var(--rounded);
-  }
-
   & > section,
   & > article {
     padding: 1rem;
@@ -19,9 +10,169 @@ main {
     &.purple-on-blue,
     &.green-on-blue {
       padding: 2rem;
-
       border-width: 1px;
       border-style: solid;
+    }
+
+    &.pilled {
+      border-radius: var(--pilled);
+    }
+
+    &.rounded {
+      border-radius: var(--rounded);
+    }
+
+    /* Outset titles on the right */
+    &.title-outset-right {
+      & h2 {
+        margin: calc(-2rem - 1px) calc(-2rem - 1px) 1rem 2rem;
+        padding: 0 0 1rem 1rem;
+        position: relative;
+        width: fit-content;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        z-index: 2;
+        float: right;
+        shape-outside: margin-box;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          border-width: 1px 1px 0 0;
+          border-style: solid;
+          border-color: inherit;
+        }
+      }
+
+      /* Pilled variant */
+      &.pilled,
+      & .pilled {
+        & h2 {
+          border-bottom-left-radius: var(--pilled);
+          &:before,
+          &:after {
+            width: var(--pilled);
+            height: var(--pilled);
+            border-top-right-radius: var(--pilled);
+            box-shadow: 0.27rem calc(-0.25 * var(--pilled)) 0 0.27rem;
+          }
+          &:before {
+            top: 0;
+            left: calc(-1 * var(--pilled));
+          }
+          &:after {
+            right: 0;
+            bottom: calc(-1 * var(--pilled));
+          }
+        }
+      }
+
+      /* Rounded variant */
+      &.rounded,
+      & .rounded {
+        & h2 {
+          border-bottom-left-radius: var(--rounded);
+          &:before,
+          &:after {
+            width: calc(1.5 * var(--rounded));
+            height: calc(2 * var(--rounded));
+            border-top-right-radius: var(--rounded);
+            box-shadow: 0.2rem calc(-0.5 * var(--rounded)) 0 0;
+          }
+          &:before {
+            top: 0;
+            left: calc(-1.5 * var(--rounded));
+          }
+          &:after {
+            right: 0;
+            bottom: calc(-2 * var(--rounded));
+          }
+        }
+      }
+    }
+
+    /* Outset titles on the left */
+    &.title-outset-left {
+      & h2 {
+        margin: calc(-2rem - 1px) 2rem 1rem calc(-2rem - 1px);
+        padding: 0 1rem 1rem 0;
+        position: relative;
+        width: fit-content;
+        border-width: 0 1px 1px 0;
+        border-style: solid;
+        z-index: 2;
+        float: left;
+        shape-outside: margin-box;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          border-width: 1px 0 0 1px;
+          border-style: solid;
+          border-color: inherit;
+        }
+      }
+
+      /* Pilled variant */
+      &.pilled,
+      & .pilled {
+        & h2 {
+          border-bottom-right-radius: var(--pilled);
+          &:before,
+          &:after {
+            width: var(--pilled);
+            height: var(--pilled);
+            border-top-left-radius: var(--pilled);
+            box-shadow: -0.27rem calc(-0.25 * var(--pilled)) 0 0.27rem;
+          }
+          &:before {
+            left: 0;
+            bottom: calc(-1 * var(--pilled));
+          }
+          &:after {
+            top: 0;
+            right: calc(-1 * var(--pilled));
+          }
+        }
+      }
+
+      /* Rounded variant */
+      &.rounded,
+      & .rounded {
+        & h2 {
+          border-bottom-right-radius: var(--rounded);
+          &:before,
+          &:after {
+            width: calc(1.5 * var(--rounded));
+            height: calc(2 * var(--rounded));
+            border-top-left-radius: var(--rounded);
+            box-shadow: -0.2rem calc(-0.5 * var(--rounded)) 0 0;
+          }
+          &:before {
+            left: 0;
+            bottom: calc(-2 * var(--rounded));
+          }
+          &:after {
+            top: 0;
+            right: calc(-1.5 * var(--rounded));
+          }
+        }
+      }
+    }
+  }
+
+  /* Nested sections or articles */
+  & section section,
+  & article section,
+  & section article,
+  & article article {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--rounded);
+
+    &.pilled {
       border-radius: var(--pilled);
     }
   }
@@ -102,8 +253,6 @@ footer {
     padding: 0 0 1rem 1rem;
     position: relative;
     width: fit-content;
-    font-size: calc(1.5rem + 1.5vw);
-    line-height: calc(1.5rem + 1.5vw);
     border-width: 0 0 1px 1px;
     border-style: solid;
     border-bottom-left-radius: var(--rounded);

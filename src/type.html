@@ -41,6 +41,7 @@
         <li><a class="active" href="type.html">Typografie</a></li>
         <li><a href="images.html">Beeld</a></li>
         <li><a href="forms.html">Formulieren</a></li>
+        <li><a href="citations.html">Citaties</a></li>
       </ul>
     </div>
 
@@ -90,7 +91,7 @@
         element aan vooraf.</p>
     </section>
 
-    <section class="blue-on-white">
+    <section class="blue-on-white pilled title-outset-right">
       <h2>Basis elementen</h2>
       
       <h3>Paragraven</h3>
@@ -186,148 +187,6 @@
         <p><code>&lt;sup&gt;</code> is superschrift voor voetnoten<sup>1</sup>
         of wiskundige formules als de stelling van Pythagoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> of 
         Einsteins relativiteitstheorie: E=mc<sup>2</sup>.</p>
-    </section>
-
-    <section class="white-on-blue">
-      <h2>Verwijzingen of citaten</h2>
-
-      <p>Bij het maken van verwijzingen hanteren we zo veel mogelijk de richtlijnen
-      van <a href="https://apastyle.apa.org/style-grammar-guidelines/citations">APA
-      Style In-Text Citations</a>.</p>
-      
-      <p>Voor verwijzingen worden een aantal HTML elementen in samenhang toegepast,
-      hier onder een overzicht van de gebruikte elementen.</p>
-      
-      <blockquote><code>&lt;blockquote&gt;</code> wordt gebruikt om een citaat
-      langer dan 40 woorden op te nemen. Geeft een blok-citaat weer als apart
-      element in de tekst en wordt onderscheidend opgemaakt.</blockquote>
-      
-      <p><code>&lt;cite&gt;</code> bevat de referentie naar een creatief werk en
-      behoort de titel van het werk te bevatten.</p>
-  
-      <p><code>&lt;q&gt;</code> wordt gebruikt om een citaat korter dan 40 woorden
-      op te nemen. Geeft een inline quote weer binnen een paragraaf welke qua stijl
-      niet verschilt van normale alineatekst.</p>
-
-      <h3>Voet- of eindnoten</h3>
-      <p>Er is nogal wat discussie over de manier van toepassen van voet- of
-      eindnoten op websites. Voor de gemiddelde website is dit niet zo'n punt maar
-      in de vertaling van onze documenten naar het web zullen we niet zonder noten
-      kunnen. Jukka Korpela <cite>(2007)</cite> geeft een overzicht
-      van de discussie op de website: <cite><a href="https://jkorpela.fi/www/fn.html">https://jkorpela.fi/www/fn.html</a></cite></p>
-
-    </section>
-
-    <section class="white-on-blue">
-      <h2>Korte verwijzingen (< 40 woorden)</h2>
-      
-      <p>Korte verwijzingen staan in de lopende tekst van een paragraaf. De auteur
-      en de datum van het originele werk kunnen gescheiden door een komma opgenomen
-      tussen haakjes in of aan het eind van een zin, altijd opgenomen in een
-      <code>&lt;cite&gt;</code> element:</p>
-
-      <p><code>&lt;q&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/q&gt;</code> Bij de opening
-      van de olympische spelen in Londen werd de beroemde uitspraak: <q>This is
-      for everyone <cite>(Lee, 2018)</cite></q>, geprojecteerd op de tribunes.</p>
-
-      <p>In een lopende zin mag de auteur genoemd worden en enkel de datum
-      van de bron tussen haakjes achter de auteur geplaatst worden:</p>
-
-      <p><code>&lt;cite&gt;&lt;/cite&gt;&lt;q&gt;&lt;/q&gt;</code> <cite>Sir Tim Berners Lee (1997)</cite> zegt dat <q>de echte kracht van het
-      web in haar universaliteit ligt.</q></p>
-
-      <p>In sommige gevallen kan er meer tekst binnen de haakjes van de verwijzing
-      opgenomen worden en is een <code>&lt;cite&gt;</code> element voldoende,
-      plaats dan komma's om het jaartal.</p>
-
-      <p><code>&lt;cite&gt;&lt;/cite&gt;</code> Het web is bedacht als netwerk voor
-      wetenschappelijke documenten bij CERN <cite>(zie Lee, 1989, voor meer uitleg)</cite>
-      maar heeft inmiddels de hele wereld veroverd.</p>
-
-      <p>In bovenstaande gevallen dient de volledige bronvermelding in een bronnenlijst
-      opgenomen te worden aan het eind van de pagina of op een speciale pagina.</p>
-
-      <p>Een directe bronvermelding mag ook, door een link op te nemen
-      in een <code>&lt;cite&gt;</code> element.</p>
-
-      <p><code>&lt;cite&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/cite&gt;</code> In de
-      context van het <code>&lt;cite&gt;</code> element mag naar allerlei creatieve
-      werken verwezen worden <cite>(Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">The Citation element</a>)</cite>.</p>
-
-    </section>
-
-    <section class="white-on-blue">
-      <h2>Lange verwijzingen (> 40 woorden)</h2>
-      <p>Lange verwijzingen worden als afzonderlijk blok opgemaakt en opgenomen
-      in een <code>&lt;blockquote&gt;</code> element. Gebruik hierbij geen
-      aanhalingstekens. Als er meer paragraven in het citaat staan wordt elke
-      volgende paragraaf ingesprongen. De auteur en de datum van het originele
-      werk of een directe bronvermelding worden, gescheiden door een komma,
-      opgenomen tussen haakjes aan het eind van het citaat in een
-      <code>&lt;cite&gt;</code> element.</p>
-
-      <blockquote><code>&lt;blockquote&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/blockquote&gt;</code> His followers called him Mahasamatman and said he was a god.
-      He preferred to drop the Maha- and the -atman, and called himself Sam. He
-      never claimed to be a god. But then, he never claimed not to be a god.
-      Circumstances being what they were, neither admission could be of any
-      benefit. <cite>(Zelasny, 1967)</cite>
-      </blockquote>
-
-      <p>Bij een narratieve manier van verwijzen heeft een introducerende alinea
-      waarin de auteur in een lopende zin genoemd wordt in een <code>&lt;cite&gt;</code>
-      element. Achter het citaat wordt in een tweede <code>&lt;cite&gt;</code>
-      element het paginanummer of de directe link naar de bron opgenomen maar
-      kunnen de auteur en het jaartal weggelaten worden.</p>
-      <p><code>&lt;p&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/blockquote&gt;</code>
-      Tim Berners Lee <cite>(1989)</cite> schreef toen hij bij CERN werkte de
-      inmiddels wereldberoemde fundamenten voor ons internet:</p>
-
-      <blockquote>
-        <p>We should work toward a universal linked information system, in which
-        generality and portability are more important than fancy graphics techniques
-        and complex extra facilities.</p>
-        
-        <p>The aim would be to allow a place to be found for any information or
-        reference which one felt was important, and a way of finding it afterwards.
-        The result should be sufficiently attractive to use that it the information
-        contained would grow past a critical threshold, so that the usefulness the
-        scheme would in turn encourage its increased use.</p>
-        <cite>(Bron: <a href="https://www.w3.org/History/1989/proposal.html">Information Management: A Proposal</a> )</cite>
-      </blockquote>
-    </section>
-
-    <section class="white-on-blue">
-      <h2>Bronnenlijst</h2>
-      
-      <p>Een bronnenlijst bestaat over het algemeen uit vier zaken per bron:
-      auteur, datum, titel en bron. Elk van deze zaken beantwoord een vraag.</p>
-      
-      <ul>
-        <li><b>Auteur</b>: Wie is verantwoordelijk voor het werk?</li>
-        <li><b>Datum</b>: Wanneer is het gepubliceerd?</li>
-        <li><b>Titel</b>: Hoe wordt het werk genoemd?</li>
-        <li><b>Bron</b>: Waar kan ik dit werk opzoeken?</li>
-      </ul>
-      
-      <p>Consistentie in het opmaken van bronnen helpt bezoekers het werk wat je
-      gebruikt te begrijpen en de belangrijke verwijzingen snel op te zoeken.
-      Hier onder staan een aantal voorbeelden van verwijzingen naar tekstuele- en
-      online werken. Kijk voor meer typen bronnen naar
-      <a href="https://apastyle.apa.org/style-grammar-guidelines/references/examples">voorbeelden op de apa.org website</a>.</p>
-      
-      <h3>Tekstuele werken</h3>
-      
-      <p>Dochy, F. & Berghmans, I. (2015) Bouwstenen voor High impact learning. Amsterdam, Nederland: Boom Lemma Uitgevers.</p>
-      
-      <p>Merriënboer, J.J.G. & Kirschner, P.A. (2013) Ten Steps to Complex Learning. (2nd ed) New York, USA: Routledge.</p>
-
-      <p>Zelasny, R. (1967) Lord of Light. (ed aug. 2006) London, GB: Gollancz.</p>
-
-      <h3>Online werken</h3>
-
-      <p>Lambert, S. (2016, 16 mei) Creating A Living Style Guide: A Case Study. Smashing Magazine. Geraadpleegd 19 mei 2022, van <a href="https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/">https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/</a></p>
-
-      <p>Lee, Sir T.B. (1989, maart) Information Management: A Proposal. CERN. Geraadpleegd 19 mei 2022, van <a href="https://www.w3.org/History/1989/proposal.html">https://www.w3.org/History/1989/proposal.html</a></p>
     </section>
     
   </main>

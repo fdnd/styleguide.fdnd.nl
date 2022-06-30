@@ -58,10 +58,12 @@ body {
       border-color: var(--blue);
     }
   }
+
   /* Back to top */
   & > nav a {
     background-color: var(--blue);
   }
+
   /* <nav> items Needs specificity or they will be overwritten below */
   & > nav li a.active,
   & > nav li a.active:hover,
@@ -90,9 +92,39 @@ body {
       color: var(--blue);
     }
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--white);
+          background-color: var(--blue);
+          border-color: var(--blue);
+          &:before,
+          &:after {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* BLUE ON GREEN */
+/*  888      888                                                                                              
+    888      888                                                                                              
+    888      888                                                                                              
+    88888b.  888 888  888  .d88b.          .d88b.  88888b.          .d88b.  888d888 .d88b.   .d88b.  88888b.  
+    888 "88b 888 888  888 d8P  Y8b        d88""88b 888 "88b        d88P"88b 888P"  d8P  Y8b d8P  Y8b 888 "88b 
+    888  888 888 888  888 88888888 888888 888  888 888  888 888888 888  888 888    88888888 88888888 888  888 
+d8b 888 d88P 888 Y88b 888 Y8b.            Y88..88P 888  888        Y88b 888 888    Y8b.     Y8b.     888  888 
+Y8P 88888P"  888  "Y88888  "Y8888          "Y88P"  888  888         "Y88888 888     "Y8888   "Y8888  888  888 
+                                                                        888                                   
+                                                                   Y8b d88P                                   
+                                                                    "Y88P"
+*/
 .blue-on-green {
   color: var(--blue);
   background-color: var(--green);
@@ -138,9 +170,40 @@ body {
       color: var(--green);
     }
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--blue);
+          background-color: var(--green);
+          border-color: inherit;
+
+          &:before,
+          &:after {
+            color: var(--green);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* BLUE-ON-PURPLE */
+/*  888      888                                                                                      888          
+    888      888                                                                                      888          
+    888      888                                                                                      888          
+    88888b.  888 888  888  .d88b.          .d88b.  88888b.         88888b.  888  888 888d888 88888b.  888  .d88b.  
+    888 "88b 888 888  888 d8P  Y8b        d88""88b 888 "88b        888 "88b 888  888 888P"   888 "88b 888 d8P  Y8b 
+    888  888 888 888  888 88888888 888888 888  888 888  888 888888 888  888 888  888 888     888  888 888 88888888 
+d8b 888 d88P 888 Y88b 888 Y8b.            Y88..88P 888  888        888 d88P Y88b 888 888     888 d88P 888 Y8b.     
+Y8P 88888P"  888  "Y88888  "Y8888          "Y88P"  888  888        88888P"   "Y88888 888     88888P"  888  "Y8888  
+                                                                   888                       888                   
+                                                                   888                       888                   
+                                                                   888                       888               
+*/
 .blue-on-purple {
   color: var(--blue);
   background-color: var(--purple);
@@ -183,9 +246,37 @@ body {
       color: var(--purple);
     }
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--blue);
+          background-color: var(--purple);
+          border-color: inherit;
+
+          &:before,
+          &:after {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* BLUE-ON-WHITE */
+/*  888      888                                                                 888      d8b 888            
+    888      888                                                                 888      Y8P 888            
+    888      888                                                                 888          888            
+    88888b.  888 888  888  .d88b.          .d88b.  88888b.         888  888  888 88888b.  888 888888 .d88b.  
+    888 "88b 888 888  888 d8P  Y8b        d88""88b 888 "88b        888  888  888 888 "88b 888 888   d8P  Y8b 
+    888  888 888 888  888 88888888 888888 888  888 888  888 888888 888  888  888 888  888 888 888   88888888 
+d8b 888 d88P 888 Y88b 888 Y8b.            Y88..88P 888  888        Y88b 888 d88P 888  888 888 Y88b. Y8b.     
+Y8P 88888P"  888  "Y88888  "Y8888          "Y88P"  888  888         "Y8888888P"  888  888 888  "Y888 "Y8888  
+*/
 .blue-on-white {
   color: var(--blue);
   background-color: var(--white);
@@ -228,9 +319,40 @@ body {
       color: var(--white);
     }
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--blue);
+          background-color: var(--white);
+          border-color: inherit;
+
+          &:before,
+          &:after {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* GREEN-ON-BLUE */
+/*                                                                             888      888                   
+                                                                               888      888                   
+                                                                               888      888                   
+     .d88b.  888d888 .d88b.   .d88b.  88888b.          .d88b.  88888b.         88888b.  888 888  888  .d88b.  
+    d88P"88b 888P"  d8P  Y8b d8P  Y8b 888 "88b        d88""88b 888 "88b        888 "88b 888 888  888 d8P  Y8b 
+    888  888 888    88888888 88888888 888  888 888888 888  888 888  888 888888 888  888 888 888  888 88888888 
+d8b Y88b 888 888    Y8b.     Y8b.     888  888        Y88..88P 888  888        888 d88P 888 Y88b 888 Y8b.     
+Y8P  "Y88888 888     "Y8888   "Y8888  888  888         "Y88P"  888  888        88888P"  888  "Y88888  "Y8888  
+         888                                                                                                  
+    Y8b d88P                                                                                                  
+     "Y88P"
+*/
 .green-on-blue {
   color: var(--green);
   background-color: var(--blue);
@@ -261,9 +383,40 @@ body {
   & > nav a {
     background-color: var(--blue);
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--green);
+          background-color: var(--blue);
+          border-color: inherit;
+
+          &:before,
+          &:after {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* PURPLE-ON-BLUE */
+/*                                     888                                          888      888                   
+                                       888                                          888      888                   
+                                       888                                          888      888                   
+    88888b.  888  888 888d888 88888b.  888  .d88b.          .d88b.  88888b.         88888b.  888 888  888  .d88b.  
+    888 "88b 888  888 888P"   888 "88b 888 d8P  Y8b        d88""88b 888 "88b        888 "88b 888 888  888 d8P  Y8b 
+    888  888 888  888 888     888  888 888 88888888 888888 888  888 888  888 888888 888  888 888 888  888 88888888 
+d8b 888 d88P Y88b 888 888     888 d88P 888 Y8b.            Y88..88P 888  888        888 d88P 888 Y88b 888 Y8b.     
+Y8P 88888P"   "Y88888 888     88888P"  888  "Y8888          "Y88P"  888  888        88888P"  888  "Y88888  "Y8888  
+    888                       888                                                                                  
+    888                       888                                                                                  
+    888                       888
+*/
 .purple-on-blue {
   color: var(--purple);
   background-color: var(--blue);
@@ -286,13 +439,46 @@ body {
       border-color: var(--blue);
     }
   }
+
+  & .blue-on-purple {
+    border-color: var(--purple);
+  }
+
   /* Back to top */
   & > nav a {
     background-color: var(--blue);
   }
+
+  /* Color for outset titles */
+  & main {
+    & > section,
+    & > article {
+      &.title-outset-left,
+      &.title-outset-right {
+        & h2 {
+          color: var(--purple);
+          background-color: var(--blue);
+          border-color: inherit;
+
+          &:before,
+          &:after {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+  }
 }
 
-/* WHITE-ON-BLUE */
+/*                888      d8b 888                                            888      888                   
+                  888      Y8P 888                                            888      888                   
+                  888          888                                            888      888                   
+    888  888  888 88888b.  888 888888 .d88b.          .d88b.  88888b.         88888b.  888 888  888  .d88b.  
+    888  888  888 888 "88b 888 888   d8P  Y8b        d88""88b 888 "88b        888 "88b 888 888  888 d8P  Y8b 
+    888  888  888 888  888 888 888   88888888 888888 888  888 888  888 888888 888  888 888 888  888 88888888 
+d8b Y88b 888 d88P 888  888 888 Y88b. Y8b.            Y88..88P 888  888        888 d88P 888 Y88b 888 Y8b.     
+Y8P  "Y8888888P"  888  888 888  "Y888 "Y8888          "Y88P"  888  888        88888P"  888  "Y88888  "Y8888  
+*/
 .white-on-blue {
   color: var(--white);
   background-color: var(--blue);

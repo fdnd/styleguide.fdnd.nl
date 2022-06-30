@@ -60,6 +60,8 @@ a:hover {
 
 main a,
 footer a {
+  white-space: inherit;
+
   &[href^='http://']:after,
   &[href^='https://']:after
   {

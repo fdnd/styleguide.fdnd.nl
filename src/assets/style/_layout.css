@@ -31,7 +31,13 @@ footer {
   grid-area: footer;
 }
 
-.col-span-2 {
+.col-span-2,
+.col-span-3 {
+  grid-column-start: span 1;
+}
+
+.row-span-2,
+.row-span-3 {
   grid-row-start: span 1;
 }
 
@@ -60,6 +66,15 @@ footer {
   main > h2,
   main > p {
     grid-column-start: span 2;
+  }
+  .col-span-3 {
+    grid-column-start: span 2;
+  }
+  .row-span-2 {
+    grid-row-start: span 2;
+  }
+  .row-span-3 {
+    grid-row-start: span 3;
   }
 }
 
