@@ -2,7 +2,7 @@
 
 ![FDND Living Styleguide](https://user-images.githubusercontent.com/140124/194700930-ebca0570-e017-43bc-baef-26db104816d2.png)
 
-De FDND Living Styleguide biedt een serie *utility-classes* waarmee over alle FDND microsites grotendeels dezelfde stijl toegepast kan worden. We hebben gekozen voor [Vite](https://vitejs.dev/) omdat het een moderne snelle ontwikkelomgeving biedt welke met [PostCSS](https://postcss.org/) moderne CSS technieken beschikbaar maakt maar evengoed dicht bij standaard browser API’s blijft. Momenteel zijn we bezig met het verplaatsen van standaard-layout naar utility classes omdat we niet in elke site dezelfde layout willen toepassen.
+De [FDND Living Styleguide](https://styleguide.fdnd.nl/) biedt een serie *utility-classes* waarmee over alle FDND microsites grotendeels dezelfde stijl toegepast kan worden. We hebben gekozen voor [Vite](https://vitejs.dev/) omdat het een moderne snelle ontwikkelomgeving biedt welke met [PostCSS](https://postcss.org/) moderne CSS technieken beschikbaar maakt maar evengoed dicht bij standaard browser API’s blijft. Momenteel zijn we bezig met het verplaatsen van standaard-layout naar utility classes omdat we niet in elke site dezelfde layout willen toepassen.
 
 ## Gebruik
 
