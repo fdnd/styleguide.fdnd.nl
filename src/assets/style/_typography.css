@@ -72,7 +72,7 @@ footer a {
     font-size: 0.8em;
     width: 1em;
     height: 1em;
-    background: url('../link-external.svg') no-repeat 100% 0;
+    background: url('/link-external.svg') no-repeat 100% 0;
     background-size: contain;
   }
   &[href$='.pdf']:after,
@@ -84,7 +84,7 @@ footer a {
     font-size: 0.8em;
     width: 1em;
     height: 1em;
-    background: url('../file-text.svg') no-repeat 100% 0;
+    background: url('/file-text.svg') no-repeat 100% 0;
     background-size: contain;
   }
   &[href$='.zip']:after,
@@ -97,7 +97,7 @@ footer a {
     font-size: 0.8em;
     width: 1em;
     height: 1em;
-    background: url('../file-zip.svg') no-repeat 100% 0;
+    background: url('/file-zip.svg') no-repeat 100% 0;
     background-size: contain;
   }
 }

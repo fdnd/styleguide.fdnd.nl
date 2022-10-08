@@ -29,7 +29,7 @@ body:after {
 /* HvA Logo (top) */
 body:before {
   top: 1rem;
-  background: url(../hvalogo.svg) no-repeat center left;
+  background: url(/hvalogo.svg) no-repeat center left;
 }
 
 /* HvA Logo (top) and program specific name */
@@ -39,8 +39,8 @@ body:before {
     content: 'Frontend \A Design & Development';
     padding: 0.04rem 1rem 0.3rem 12rem;
     top: 1rem;
-    background: url(../hvalogo.svg) no-repeat center left;
-    background: url(../hvalogo.svg) no-repeat center left,
+    background: url(/hvalogo.svg) no-repeat center left;
+    background: url(/hvalogo.svg) no-repeat center left,
       linear-gradient(90deg, transparent calc(50% - 2px), #000 calc(50%), transparent calc(50%));
   }
 }
@@ -49,5 +49,5 @@ body:before {
 body:after {
   height: 1.2rem;
   bottom: 1rem;
-  background: url(../hvapayoff.svg) no-repeat center left;
+  background: url(/hvapayoff.svg) no-repeat center left;
 }

@@ -1,146 +1,171 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FDND Styleguide</title>
+    <meta name="description" content="Styleguide voor FDND" />
 
-<head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <title>FDND Styleguide</title>
-  <meta name="description" content="Styleguide voor FDND" />
+    <link rel="canonical" href="https://styleguide.fdnd.nl/" />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://styleguide.fdnd.nl/" />
-  <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/fdnd.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='./assets/style/fdnd.css'>
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <link rel='icon' type='image/png' href='./assets/favicon.png'>
+    <meta property="og:title" content="FDND Styleguide" />
+    <meta
+      property="og:description"
+      content="Styleguide pagina voor de Ad Frontend Design & Development"
+    />
+    <meta property="og:site_name" content="styleguide.fdnd.nl" />
+    <meta property="og:url" content="https://styleguide.fdnd.nl" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="blue-on-purple">
+    <header>
+      <h1>
+        <abbr title="Frontend Design & Development"><span>FDND</span></abbr>
+        <span>Style Guide</span>
+      </h1>
+      <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
+    </header>
 
-  <meta property="og:title" content="FDND Styleguide" />
-  <meta property="og:description" content="Styleguide pagina voor de Ad Frontend Design & Development" />
-  <meta property="og:site_name" content="styleguide.fdnd.nl" />
-  <meta property="og:url" content="https://styleguide.fdnd.nl" />
-  <meta property="og:type" content="website" />
-
-</head>
-<body class="blue-on-purple">
-  <header>
-    <h1><abbr title="Frontend Design & Development"><span>FDND</span></abbr> <span>Style Guide</span></h1>
-    <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
-  </header>
-
-  <nav>
-    <div>
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="layout.html">Layout</a></li>
-        <li><a href="colors.html">Kleuren</a></li>
-        <li><a href="type.html">Typografie</a></li>
-        <li><a href="images.html">Beeld</a></li>
-        <li><a href="forms.html">Formulieren</a></li>
-        <li><a href="citations.html">Citaties</a></li>
-      </ul>
-    </div>
-
-    <a href="#">Back to top</a>
-  </nav>
-
-  <main>
-    <section class="purple-on-blue row-span-2">
-      <h2>Layout elementen</h2>
-      <p>De overall layout van de pagina, een-, twee- of drie-koloms, wordt 
-      altijd op dezelfde manier bepaald. Voor de opmaak van <code>&lt;section&gt;</code>
-      en <code>&lt;article&gt;</code> elementen zijn een hoop <i>decorator
-      classes</i> die toegevoegd kunnen worden om de layout speelser te maken. Op
-      deze pagina vind je een  opsomming van layout classes en voorbeelden hoe
-      die toe te passen zijn.</p>
-      <p>Om te beginnen zijn er twee classes die de afronding van hoeken van 
-      <code>&lt;section&gt;</code> en <code>&lt;article&gt;</code> elementen 
-      bepaald: <code>.pilled</code> en <code>.rounded</code></p>
-    </section>
-
-    <section class="purple-on-blue pilled">
-      <h2>.pilled</h2>
-      <p>Dit is een blok met grote rondingen, door deze class toe te passen
-      veranderen ook de hapjes uit de hoeken automatisch mee. (dit is de standaard)</p>
-    </section>
-
-    <section class="purple-on-blue rounded gap-love">
-      <h2>.rounded</h2>
-      <p>Dit is een blok met kleine rondingen, door deze class toe te passen
-      veranderen ook de hapjes uit de hoeken automatisch mee.</p>
-    </section>
-
-    <section class="blue-on-purple rounded title-outset-right">
-      <h2>.title-outset-right</h2>
-      <p>Dit is een <code>&lt;section&gt;</code> met kleine afrondingen en een
-      <i>outset</i> titel aan de rechter kant. Deze <code>&lt;section&gt;</code> heeft meerdere
-      classes die met elkaar de opmaak van het element bepalen:
-      <code>&lt;section class="purple-on-blue rounded title-outset-right"&gt;</code></p>
-    </section>
-
-    <section class="blue-on-purple pilled title-outset-right">
-      <h2>.title-outset-right</h2>
-      <p>Dit is een <code>&lt;section&gt;</code> met grote rondingen met een
-      <i>outset</i> titel. Deze <code>&lt;section&gt;</code> heeft meerdere
-      classes die met elkaar de opmaak van het element bepalen:
-      <code>&lt;section class="purple-on-blue pilled title-outset-right"&gt;</code></p>
-    </section>
-
-    <section class="blue-on-purple rounded title-outset-left">
-      <h2>.title-outset-left</h2>
-      <p>Dit is een <code>&lt;section&gt;</code> met kleine afrondingen en een
-      <i>outset</i> titel aan de rechter kant. Deze <code>&lt;section&gt;</code> heeft meerdere
-      classes die met elkaar de opmaak van het element bepalen:
-      <code>&lt;section class="purple-on-blue rounded title-outset-left"&gt;</code></p>
-    </section>
-
-    <section class="blue-on-purple pilled title-outset-left">
-      <h2>.title-outset-left</h2>
-      <p>Dit is een <code>&lt;section&gt;</code> met grote rondingen met een
-      <i>outset</i> titel. Deze <code>&lt;section&gt;</code> heeft meerdere
-      classes die met elkaar de opmaak van het element bepalen:
-      <code>&lt;section class="purple-on-blue pilled title-outset-left"&gt;</code></p>
-    </section>
-
-    <section class="purple-on-blue">
-      <h2><i>Spanning</i> elementen</h2>
-      <p>2 kolommen (.col-span-2)</p>
-      <p>3 kolommen (.col-span-3)</p>
-      <p>2 rijen (.row-span-2)</p>
-    </section>
-    
-    <section>
-      <h2>Andere vormen</h2>
-      <p>citaatblok met grotere tekst</p>
-      <p>kleine of grote gap in een bepaalde hoek (.smallgap-top-left, .largegap-top-left, etc.)</p>
-      <p>gap elementen met iconen (en kleur bepalen)</p>
-      <p>border collapse waarbij elementen in elkaar schuiven op basis van gaps.
-        Bijvoorbeeld elementen met .smallgap-bottom-right + .smallgap-top-left</p>
-    </section>
-    
-  </main>
-
-  <footer>
     <nav>
-      <h2>Microsites</h2>
-      <p>FDND maakt gebruik van een heleboel microsites in plaats van één grote
-      website met een ingewikkelde informatiestructuur. Microsites zijn kleine
-      websites met een specifiek doel ter ondersteuning van een campagne,
-      informatie over een product of dienst.</p>
-      <ul>
-        <li><a href="https://fdnd.nl">FDND.nl</a></li>
-        <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
-        <li><a href="https://programma.fdnd.nl">Programma</a></li>
-        <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
-        <li><a href="https://partners.fdnd.nl">Partners</a></li>
-        <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
-        <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
-      </ul>
-    </nav>
-  </footer>
+      <div>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="layout.html">Layout</a></li>
+          <li><a href="colors.html">Kleuren</a></li>
+          <li><a href="type.html">Typografie</a></li>
+          <li><a href="images.html">Beeld</a></li>
+          <li><a href="forms.html">Formulieren</a></li>
+          <li><a href="citations.html">Citaties</a></li>
+        </ul>
+      </div>
 
-</body>
+      <a href="#">Back to top</a>
+    </nav>
+
+    <main>
+      <section class="purple-on-blue row-span-2">
+        <h2>Layout elementen</h2>
+        <p>
+          De overall layout van de pagina, een-, twee- of drie-koloms, wordt altijd op dezelfde
+          manier bepaald. Voor de opmaak van <code>&lt;section&gt;</code> en
+          <code>&lt;article&gt;</code> elementen zijn een hoop <i>decorator classes</i> die
+          toegevoegd kunnen worden om de layout speelser te maken. Op deze pagina vind je een
+          opsomming van layout classes en voorbeelden hoe die toe te passen zijn.
+        </p>
+        <p>
+          Om te beginnen zijn er twee classes die de afronding van hoeken van
+          <code>&lt;section&gt;</code> en <code>&lt;article&gt;</code> elementen bepaald:
+          <code>.pilled</code> en <code>.rounded</code>
+        </p>
+      </section>
+
+      <section class="purple-on-blue pilled">
+        <h2>.pilled</h2>
+        <p>
+          Dit is een blok met grote rondingen, door deze class toe te passen veranderen ook de
+          hapjes uit de hoeken automatisch mee. (dit is de standaard)
+        </p>
+      </section>
+
+      <section class="purple-on-blue rounded gap-love">
+        <h2>.rounded</h2>
+        <p>
+          Dit is een blok met kleine rondingen, door deze class toe te passen veranderen ook de
+          hapjes uit de hoeken automatisch mee.
+        </p>
+      </section>
+
+      <section class="blue-on-purple rounded title-outset-right">
+        <h2>.title-outset-right</h2>
+        <p>
+          Dit is een <code>&lt;section&gt;</code> met kleine afrondingen en een <i>outset</i> titel
+          aan de rechter kant. Deze <code>&lt;section&gt;</code> heeft meerdere classes die met
+          elkaar de opmaak van het element bepalen:
+          <code>&lt;section class="purple-on-blue rounded title-outset-right"&gt;</code>
+        </p>
+      </section>
+
+      <section class="blue-on-purple pilled title-outset-right">
+        <h2>.title-outset-right</h2>
+        <p>
+          Dit is een <code>&lt;section&gt;</code> met grote rondingen met een <i>outset</i> titel.
+          Deze <code>&lt;section&gt;</code> heeft meerdere classes die met elkaar de opmaak van het
+          element bepalen:
+          <code>&lt;section class="purple-on-blue pilled title-outset-right"&gt;</code>
+        </p>
+      </section>
+
+      <section class="blue-on-purple rounded title-outset-left">
+        <h2>.title-outset-left</h2>
+        <p>
+          Dit is een <code>&lt;section&gt;</code> met kleine afrondingen en een <i>outset</i> titel
+          aan de rechter kant. Deze <code>&lt;section&gt;</code> heeft meerdere classes die met
+          elkaar de opmaak van het element bepalen:
+          <code>&lt;section class="purple-on-blue rounded title-outset-left"&gt;</code>
+        </p>
+      </section>
+
+      <section class="blue-on-purple pilled title-outset-left">
+        <h2>.title-outset-left</h2>
+        <p>
+          Dit is een <code>&lt;section&gt;</code> met grote rondingen met een <i>outset</i> titel.
+          Deze <code>&lt;section&gt;</code> heeft meerdere classes die met elkaar de opmaak van het
+          element bepalen:
+          <code>&lt;section class="purple-on-blue pilled title-outset-left"&gt;</code>
+        </p>
+      </section>
+
+      <section class="purple-on-blue">
+        <h2><i>Spanning</i> elementen</h2>
+        <p>2 kolommen (.col-span-2)</p>
+        <p>3 kolommen (.col-span-3)</p>
+        <p>2 rijen (.row-span-2)</p>
+      </section>
+
+      <section>
+        <h2>Andere vormen</h2>
+        <p>citaatblok met grotere tekst</p>
+        <p>
+          kleine of grote gap in een bepaalde hoek (.smallgap-top-left, .largegap-top-left, etc.)
+        </p>
+        <p>gap elementen met iconen (en kleur bepalen)</p>
+        <p>
+          border collapse waarbij elementen in elkaar schuiven op basis van gaps. Bijvoorbeeld
+          elementen met .smallgap-bottom-right + .smallgap-top-left
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <h2>Microsites</h2>
+        <p>
+          FDND maakt gebruik van een heleboel microsites in plaats van één grote website met een
+          ingewikkelde informatiestructuur. Microsites zijn kleine websites met een specifiek doel
+          ter ondersteuning van een campagne, informatie over een product of dienst.
+        </p>
+        <ul>
+          <li><a href="https://fdnd.nl">FDND.nl</a></li>
+          <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
+          <li><a href="https://programma.fdnd.nl">Programma</a></li>
+          <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
+          <li><a href="https://partners.fdnd.nl">Partners</a></li>
+          <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
+          <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

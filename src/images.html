@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FDND Styleguide</title>
+    <meta name="description" content="Styleguide voor FDND" />
 
-<head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <title>FDND Styleguide</title>
-  <meta name="description" content="Styleguide voor FDND" />
+    <link rel="canonical" href="https://styleguide.fdnd.nl/" />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://styleguide.fdnd.nl/" />
-  <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/fdnd.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='./assets/style/fdnd.css'>
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <link rel='icon' type='image/png' href='./assets/favicon.png'>
+    <meta property="og:title" content="FDND Styleguide" />
+    <meta
+      property="og:description"
+      content="Styleguide pagina voor de Ad Frontend Design & Development"
+    />
+    <meta property="og:site_name" content="styleguide.fdnd.nl" />
+    <meta property="og:url" content="https://styleguide.fdnd.nl" />
+    <meta property="og:type" content="website" />
+  </head>
 
-  <meta property="og:title" content="FDND Styleguide" />
-  <meta property="og:description" content="Styleguide pagina voor de Ad Frontend Design & Development" />
-  <meta property="og:site_name" content="styleguide.fdnd.nl" />
-  <meta property="og:url" content="https://styleguide.fdnd.nl" />
-  <meta property="og:type" content="website" />
+  <body class="purple-on-blue">
+    <header>
+      <h1>
+        <abbr title="Frontend Design & Development"><span>FDND</span></abbr>
+        <span>Style Guide</span>
+      </h1>
+      <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
+    </header>
 
-</head>
-
-<body class="purple-on-blue">
-  <header>
-    <h1><abbr title="Frontend Design & Development"><span>FDND</span></abbr> <span>Style Guide</span></h1>
-    <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
-  </header>
-
-  <nav>
-    <div>
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="layout.html">Layout</a></li>
-        <li><a href="colors.html">Kleuren</a></li>
-        <li><a href="type.html">Typografie</a></li>
-        <li><a class="active" href="images.html">Beeld</a></li>
-        <li><a href="forms.html">Formulieren</a></li>
-        <li><a href="citations.html">Citaties</a></li>
-      </ul>
-    </div>
-
-    <a href="#">Back to top</a>
-  </nav>
-
-  <main>
-
-    <figure>
-      <img src="assets/fdnd-impression.jpg" alt="Mees en Fenna aan het werk">
-      <figcaption><span>Afbeelding met bijschrift.</span></figcaption>
-    </figure>
-
-    <section class="blue-on-purple pilled title-outset-right">
-      <h2>Beeld als blok</h2>
-      <p>Voeg <code>&lt;figure&gt;</code> met <code>&lt;img&gt;</code> elementen
-      direct toe aan <code>&lt;main&gt;</code> om een afbeelding als blok toe te
-      voegen.</p>
-      
-      <p>Optioneel voeg je ook een onderschrift toe door een <code>&lt;figcaption&gt;</code>
-      met een <code>&lt;span&gt;</code> toe te voegen, deze wordt  als hapje uit
-      de hoek linksonder neergezet wordt.</p>
-      
-      <p>Pas op met te lange tekst in het onderschift, probeer altijd
-      verschillende schermgroottes uit om te checken of het ook responsive goed
-      blijft werken.</p>
-    </section>
-    
-    <section class="blue-on-purple col-span-2">
-      <h2>Beeld in een blok</h2>
-
-      <p>Een selectie van beeldmateriaal dat gebruikt kan worden voor FDND.</p>
-      <img src="https://via.placeholder.com/640x480.png/050840/7ce7c9" alt="640x480 placeholder image">
-      <img src="https://via.placeholder.com/1024x768.png/050840/7ce7c9" alt="1024x768 placeholder image">
-      <img src="https://via.placeholder.com/1280x1024.png/050840/7ce7c9" alt="1280x1024 placeholder image">
-    </section>
-    
-  </main>
-
-  <footer>
     <nav>
-      <h2>Microsites</h2>
-      <p>FDND maakt gebruik van een heleboel microsites in plaats van één grote
-      website met een ingewikkelde informatiestructuur. Microsites zijn kleine
-      websites met een specifiek doel ter ondersteuning van een campagne,
-      informatie over een product of dienst.</p>
-      <ul>
-        <li><a href="https://fdnd.nl">FDND.nl</a></li>
-        <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
-        <li><a href="https://programma.fdnd.nl">Programma</a></li>
-        <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
-        <li><a href="https://partners.fdnd.nl">Partners</a></li>
-        <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
-        <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
-      </ul>
+      <div>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="layout.html">Layout</a></li>
+          <li><a href="colors.html">Kleuren</a></li>
+          <li><a href="type.html">Typografie</a></li>
+          <li><a class="active" href="images.html">Beeld</a></li>
+          <li><a href="forms.html">Formulieren</a></li>
+          <li><a href="citations.html">Citaties</a></li>
+        </ul>
+      </div>
+
+      <a href="#">Back to top</a>
     </nav>
-  </footer>
 
-</body>
+    <main>
+      <figure>
+        <img src="/fdnd-impression.jpg" alt="Mees en Fenna aan het werk" />
+        <figcaption><span>Afbeelding met bijschrift.</span></figcaption>
+      </figure>
 
+      <section class="blue-on-purple pilled title-outset-right">
+        <h2>Beeld als blok</h2>
+        <p>
+          Voeg <code>&lt;figure&gt;</code> met <code>&lt;img&gt;</code> elementen direct toe aan
+          <code>&lt;main&gt;</code> om een afbeelding als blok toe te voegen.
+        </p>
+
+        <p>
+          Optioneel voeg je ook een onderschrift toe door een <code>&lt;figcaption&gt;</code> met
+          een <code>&lt;span&gt;</code> toe te voegen, deze wordt als hapje uit de hoek linksonder
+          neergezet wordt.
+        </p>
+
+        <p>
+          Pas op met te lange tekst in het onderschift, probeer altijd verschillende schermgroottes
+          uit om te checken of het ook responsive goed blijft werken.
+        </p>
+      </section>
+
+      <section class="blue-on-purple col-span-2">
+        <h2>Beeld in een blok</h2>
+
+        <p>Een selectie van beeldmateriaal dat gebruikt kan worden voor FDND.</p>
+        <img
+          src="https://via.placeholder.com/640x480.png/050840/7ce7c9"
+          alt="640x480 placeholder image"
+        />
+        <img
+          src="https://via.placeholder.com/1024x768.png/050840/7ce7c9"
+          alt="1024x768 placeholder image"
+        />
+        <img
+          src="https://via.placeholder.com/1280x1024.png/050840/7ce7c9"
+          alt="1280x1024 placeholder image"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <h2>Microsites</h2>
+        <p>
+          FDND maakt gebruik van een heleboel microsites in plaats van één grote website met een
+          ingewikkelde informatiestructuur. Microsites zijn kleine websites met een specifiek doel
+          ter ondersteuning van een campagne, informatie over een product of dienst.
+        </p>
+        <ul>
+          <li><a href="https://fdnd.nl">FDND.nl</a></li>
+          <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
+          <li><a href="https://programma.fdnd.nl">Programma</a></li>
+          <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
+          <li><a href="https://partners.fdnd.nl">Partners</a></li>
+          <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
+          <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
