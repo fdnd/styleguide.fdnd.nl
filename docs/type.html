@@ -1,1 +1,258 @@
-<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FDND Styleguide</title><meta name="description" content="Styleguide voor FDND"><link rel="canonical" href="https://styleguide.fdnd.nl/"><meta name="robots" content="index, follow"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://styleguide.fdnd.nl/index.76bb5a55.css"><link rel="icon" type="image/png" href="https://styleguide.fdnd.nl/favicon.e16877d4.png"><meta property="og:title" content="FDND Styleguide"><meta property="og:description" content="Styleguide pagina voor de Ad Frontend Design & Development"><meta property="og:site_name" content="styleguide.fdnd.nl"><meta property="og:url" content="https://styleguide.fdnd.nl"><meta property="og:type" content="website"></head><body class="blue-on-white"> <header> <h1><abbr title="Frontend Design & Development"><span>FDND</span></abbr> <span>Style Guide</span></h1> <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p> </header> <nav> <div> <h2>Menu</h2> <ul> <li><a href="https://styleguide.fdnd.nl/index.html">Home</a></li> <li><a href="https://styleguide.fdnd.nl/layout.html">Layout</a></li> <li><a href="https://styleguide.fdnd.nl/colors.html">Kleuren</a></li> <li><a class="active" href="https://styleguide.fdnd.nl/type.html">Typografie</a></li> <li><a href="https://styleguide.fdnd.nl/images.html">Beeld</a></li> <li><a href="https://styleguide.fdnd.nl/forms.html">Formulieren</a></li> <li><a href="https://styleguide.fdnd.nl/citations.html">Citaties</a></li> </ul> </div> <a href="#">Back to top</a> </nav> <main> <section class="blue-on-white"> <h2>Kopteksten</h2> <p>Er worden zes heading levels gebruikt binnen de FDND pagina's, aangeduid door <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> en <code>&lt;h6&gt;</code>. Deze dienen op correcte wijze te worden genest zodat de <em>document outline</em> een nette hierarchie heeft.</p> <br> <h1>Heading level 1</h1> <p><code>&lt;h1&gt;</code> wordt één keer per pagina gebruikt en staat in het <code>&lt;header&gt;</code> element.</p> <h2>Heading 2</h2> <p><code>&lt;h2&gt;</code> wordt één keer per <code>&lt;section&gt;</code> of <code>&lt;article&gt;</code> toegepast welke in het <code>&lt;main&gt;</code> element staan.</p> <h3>Heading 3</h3> <p><code>&lt;h3&gt;</code> mag per <code>&lt;section&gt;</code> of <code>&lt;article&gt;</code> meerdere keren voor komen nadat er binnen het parent element minstens een <code>&lt;h2&gt;</code> element aan vooraf gaat.</p> <h4>Heading 4</h4> <p><code>&lt;h4&gt;</code> op zelfde wijze als <code>&lt;h3&gt;</code> maar er gaat binnen het parent element minstens een <code>&lt;h3&gt;</code> element aan vooraf.</p> <h5>Heading 5</h5> <p><code>&lt;h5&gt;</code> op zelfde wijze als <code>&lt;h4&gt;</code> maar er gaat binnen het parent element minstens een <code>&lt;h4&gt;</code> element aan vooraf.</p> <h6>Heading 6</h6> <p><code>&lt;h6&gt;</code> op zelfde wijze als <code>&lt;h5&gt;</code> maar er gaat binnen het parent element minstens een <code>&lt;h5&gt;</code> element aan vooraf.</p> </section> <section class="blue-on-white pilled title-outset-right"> <h2>Basis elementen</h2> <h3>Paragraven</h3> <p><code>&lt;p&gt;</code> heeft een neutrale vormgeving waarbij kleuren worden bepaald door het kleurenschema van het omringende <code>&lt;article&gt;</code> of <code>&lt;section&gt;</code> element.</p> <p><code>p + p</code> krijgt een <i>margin</i> aan de bovenkant bij de 2e paragraaf zodat lappen tekst opgedeeld worden en makkelijker te lezen zijn.</p> <h3>Links</h3> <p><code>&lt;a href=""&gt;</code> wordt toegepast binnen de lopende tekst in een paragraaf. Links <a href="#">binnen de pagina</a> worden anders weergegeven als links <a href="https://fdnd.nl">buiten de pagina</a>, deze krijgen een icoon om te laten zien dat er van de huidige site weg genavigeerd wordt.</p> <p>Links naar bestanden met een <a href="https://example.com/file.pdf">.pdf en .doc</a> of een <a href="https://example.com/file.zip">.zip, .rar en .tar</a> extensie krijgen automatisch een icoon toebedeeld.</p> <h3>Lijsten</h3> <p>Het <code>&lt;ul&gt;</code> element:</p> <ul> <li>is bedoeld voor lijsten zonder volgordelijkheid</li> <li>wordt weergegeven met een cirkel als lijstaanduiding.</li> </ul> <p>Het <code>&lt;ol&gt;</code> element:</p> <ol> <li>is bedoeld voor lijsten met volgordelijkheid</li> <li>wordt weergegeven met cijfers als lijstaanduiding.</li> </ol> </section> <section class="blue-on-white"> <h2>Gangbare Inline elementen</h2> <p><code>&lt;abbr&gt;</code> geeft de uitwijding van afkortingen als <abbr title="Associate degree">Ad</abbr> en <abbr title="Frontend Design & Development">FDND</abbr> weer. Er verandert niets qua opmaak maar je kunt erover hoveren om de title te zien.</p> <p><code>&lt;b&gt;</code> staat voor <b>b(ring to attention)</b> en vestigt aandacht zonder verdere semantische waarde toe te kennen.</p> <p><code>&lt;code&gt;</code> wordt weergegeven op een manier die laat zien dat het om een kort codefragment gaat. Wij gebruiken dit om bestandsnamen als <code>./README.md</code> of <abbr title="command line interface">CLI</abbr> commando's als <code>git pull</code> op te nemen in een paragraaf.</p> <p><code>&lt;em&gt;</code> staat voor <em>em(phasize)</em> en wordt gebruikt om semantische nadruk te geven.</p> <p><code>&lt;i&gt;</code> staat voor <i>i(diomatic text)</i> wordt gebruikt voor technische terminologie, jargon etc. zonder verdere semantische waarde toe te kennen.</p> <p><code>&lt;mark&gt;</code> markeert een stuk tekst alsof je er met <mark>een highlighter</mark> overheen gegaan bent.</p> <p><code>&lt;strong&gt;</code> staat voor <strong>strong(ly emphasize)</strong> en wordt gebruikt om sterke semantische nadruk te geven.</p> <p><code>&lt;time datetime=""&gt;</code> geeft een tijd of datum gerelateerde verwijzing aan, bijvoorbeeld <time datetime="2021-04-15">15 april 2021</time>.</p> </section> <section class="blue-on-white"> <h2>Obscure Inline elementen</h2> <p><code>&lt;del&gt;</code> representeert <del>een stuk tekst dat uit het document verwijderd is</del>. Het wordt herkenbaar opgemaakt met een achtergrond in de <i>highlight</i> kleur en doorgehaalde tekst. Ook staat er een min-teken voor de tekst die verwijderd wordt.</p> <p><code>&lt;ins&gt;</code> representeert <ins>een stuk tekst dat aan het document toegevoegd is</ins>. Het wordt herkenbaar opgemaakt met een achtergrond in de <i>highlight</i> kleur en er staat een min-teken voor de tekst die verwijderd wordt.</p> <p><code>&lt;kbd&gt;</code> maakt knopjes als <kbd>Ctrl</kbd> + <kbd>Shift</kbd></p> <p><code>&lt;s&gt;</code> haalt <s>een stuk tekst door</s>.</p> <p><code>&lt;sub&gt;</code> is subschrift voor de cijfers in scheikundige formules zoals C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> beter bekend als caffeïne en C<sub>18</sub>H<sub>27</sub>NO<sub>3</sub> beter bekend als capsaïcine.</p> <p><code>&lt;sup&gt;</code> is superschrift voor voetnoten<sup>1</sup> of wiskundige formules als de stelling van Pythagoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> of Einsteins relativiteitstheorie: E=mc<sup>2</sup>.</p> </section> </main> <footer> <nav> <h2>Microsites</h2> <p>FDND maakt gebruik van een heleboel microsites in plaats van één grote website met een ingewikkelde informatiestructuur. Microsites zijn kleine websites met een specifiek doel ter ondersteuning van een campagne, informatie over een product of dienst.</p> <ul> <li><a href="https://fdnd.nl">FDND.nl</a></li> <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li> <li><a href="https://programma.fdnd.nl">Programma</a></li> <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li> <li><a href="https://partners.fdnd.nl">Partners</a></li> <li><a href="https://tasks.fdnd.nl">Leertaken</a></li> <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li> </ul> </nav> </footer> </body></html>
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FDND Styleguide</title>
+    <meta name="description" content="Styleguide voor FDND" />
+
+    <link rel="canonical" href="https://styleguide.fdnd.nl/" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <meta property="og:title" content="FDND Styleguide" />
+    <meta
+      property="og:description"
+      content="Styleguide pagina voor de Ad Frontend Design & Development"
+    />
+    <meta property="og:site_name" content="styleguide.fdnd.nl" />
+    <meta property="og:url" content="https://styleguide.fdnd.nl" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/fdnd.latest.css">
+  </head>
+
+  <body class="blue-on-white">
+    <header>
+      <h1>
+        <abbr title="Frontend Design & Development"><span>FDND</span></abbr>
+        <span>Style Guide</span>
+      </h1>
+      <p>Omdat we heel veel verschillende pagina's op dezelfde manier willen vormgeven.</p>
+    </header>
+
+    <nav>
+      <div>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="layout.html">Layout</a></li>
+          <li><a href="colors.html">Kleuren</a></li>
+          <li><a class="active" href="type.html">Typografie</a></li>
+          <li><a href="images.html">Beeld</a></li>
+          <li><a href="forms.html">Formulieren</a></li>
+          <li><a href="citations.html">Citaties</a></li>
+        </ul>
+      </div>
+
+      <a href="#">Back to top</a>
+    </nav>
+
+    <main>
+      <section class="blue-on-white">
+        <h2>Kopteksten</h2>
+
+        <p>
+          Er worden zes heading levels gebruikt binnen de FDND pagina's, aangeduid door
+          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,
+          <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> en <code>&lt;h6&gt;</code>. Deze dienen
+          op correcte wijze te worden genest zodat de <em>document outline</em> een nette hierarchie
+          heeft.
+        </p>
+        <br />
+
+        <h1>Heading level 1</h1>
+        <p>
+          <code>&lt;h1&gt;</code> wordt één keer per pagina gebruikt en staat in het
+          <code>&lt;header&gt;</code> element.
+        </p>
+
+        <h2>Heading 2</h2>
+        <p>
+          <code>&lt;h2&gt;</code> wordt één keer per <code>&lt;section&gt;</code> of
+          <code>&lt;article&gt;</code> toegepast welke in het <code>&lt;main&gt;</code> element
+          staan.
+        </p>
+
+        <h3>Heading 3</h3>
+        <p>
+          <code>&lt;h3&gt;</code> mag per <code>&lt;section&gt;</code> of
+          <code>&lt;article&gt;</code> meerdere keren voor komen nadat er binnen het parent element
+          minstens een <code>&lt;h2&gt;</code> element aan vooraf gaat.
+        </p>
+
+        <h4>Heading 4</h4>
+        <p>
+          <code>&lt;h4&gt;</code> op zelfde wijze als <code>&lt;h3&gt;</code> maar er gaat binnen
+          het parent element minstens een <code>&lt;h3&gt;</code> element aan vooraf.
+        </p>
+
+        <h5>Heading 5</h5>
+        <p>
+          <code>&lt;h5&gt;</code> op zelfde wijze als <code>&lt;h4&gt;</code> maar er gaat binnen
+          het parent element minstens een <code>&lt;h4&gt;</code> element aan vooraf.
+        </p>
+
+        <h6>Heading 6</h6>
+        <p>
+          <code>&lt;h6&gt;</code> op zelfde wijze als <code>&lt;h5&gt;</code> maar er gaat binnen
+          het parent element minstens een <code>&lt;h5&gt;</code> element aan vooraf.
+        </p>
+      </section>
+
+      <section class="blue-on-white pilled title-outset-right">
+        <h2>Basis elementen</h2>
+
+        <h3>Paragraven</h3>
+        <p>
+          <code>&lt;p&gt;</code> heeft een neutrale vormgeving waarbij kleuren worden bepaald door
+          het kleurenschema van het omringende <code>&lt;article&gt;</code> of
+          <code>&lt;section&gt;</code> element.
+        </p>
+
+        <p>
+          <code>p + p</code> krijgt een <i>margin</i> aan de bovenkant bij de 2e paragraaf zodat
+          lappen tekst opgedeeld worden en makkelijker te lezen zijn.
+        </p>
+
+        <h3>Links</h3>
+        <p>
+          <code>&lt;a href=""&gt;</code> wordt toegepast binnen de lopende tekst in een paragraaf.
+          Links <a href="#">binnen de pagina</a> worden anders weergegeven als links
+          <a href="https://fdnd.nl">buiten de pagina</a>, deze krijgen een icoon om te laten zien
+          dat er van de huidige site weg genavigeerd wordt.
+        </p>
+
+        <p>
+          Links naar bestanden met een <a href="https://example.com/file.pdf">.pdf en .doc</a> of
+          een <a href="https://example.com/file.zip">.zip, .rar en .tar</a> extensie krijgen
+          automatisch een icoon toebedeeld.
+        </p>
+
+        <h3>Lijsten</h3>
+
+        <p>Het <code>&lt;ul&gt;</code> element:</p>
+        <ul>
+          <li>is bedoeld voor lijsten zonder volgordelijkheid</li>
+          <li>wordt weergegeven met een cirkel als lijstaanduiding.</li>
+        </ul>
+
+        <p>Het <code>&lt;ol&gt;</code> element:</p>
+        <ol>
+          <li>is bedoeld voor lijsten met volgordelijkheid</li>
+          <li>wordt weergegeven met cijfers als lijstaanduiding.</li>
+        </ol>
+      </section>
+
+      <section class="blue-on-white">
+        <h2>Gangbare Inline elementen</h2>
+
+        <p>
+          <code>&lt;abbr&gt;</code> geeft de uitwijding van afkortingen als
+          <abbr title="Associate degree">Ad</abbr> en
+          <abbr title="Frontend Design & Development">FDND</abbr> weer. Er verandert niets qua
+          opmaak maar je kunt erover hoveren om de title te zien.
+        </p>
+
+        <p>
+          <code>&lt;b&gt;</code> staat voor <b>b(ring to attention)</b> en vestigt aandacht zonder
+          verdere semantische waarde toe te kennen.
+        </p>
+
+        <p>
+          <code>&lt;code&gt;</code> wordt weergegeven op een manier die laat zien dat het om een
+          kort codefragment gaat. Wij gebruiken dit om bestandsnamen als <code>./README.md</code> of
+          <abbr title="command line interface">CLI</abbr> commando's als <code>git pull</code> op te
+          nemen in een paragraaf.
+        </p>
+
+        <p>
+          <code>&lt;em&gt;</code> staat voor <em>em(phasize)</em> en wordt gebruikt om semantische
+          nadruk te geven.
+        </p>
+
+        <p>
+          <code>&lt;i&gt;</code> staat voor <i>i(diomatic text)</i> wordt gebruikt voor technische
+          terminologie, jargon etc. zonder verdere semantische waarde toe te kennen.
+        </p>
+
+        <p>
+          <code>&lt;mark&gt;</code> markeert een stuk tekst alsof je er met
+          <mark>een highlighter</mark> overheen gegaan bent.
+        </p>
+
+        <p>
+          <code>&lt;strong&gt;</code> staat voor <strong>strong(ly emphasize)</strong> en wordt
+          gebruikt om sterke semantische nadruk te geven.
+        </p>
+
+        <p>
+          <code>&lt;time datetime=""&gt;</code> geeft een tijd of datum gerelateerde verwijzing aan,
+          bijvoorbeeld <time datetime="2021-04-15">15 april 2021</time>.
+        </p>
+      </section>
+
+      <section class="blue-on-white">
+        <h2>Obscure Inline elementen</h2>
+
+        <p>
+          <code>&lt;del&gt;</code> representeert
+          <del>een stuk tekst dat uit het document verwijderd is</del>. Het wordt herkenbaar
+          opgemaakt met een achtergrond in de <i>highlight</i> kleur en doorgehaalde tekst. Ook
+          staat er een min-teken voor de tekst die verwijderd wordt.
+        </p>
+
+        <p>
+          <code>&lt;ins&gt;</code> representeert
+          <ins>een stuk tekst dat aan het document toegevoegd is</ins>. Het wordt herkenbaar
+          opgemaakt met een achtergrond in de <i>highlight</i> kleur en er staat een min-teken voor
+          de tekst die verwijderd wordt.
+        </p>
+
+        <p><code>&lt;kbd&gt;</code> maakt knopjes als <kbd>Ctrl</kbd> + <kbd>Shift</kbd></p>
+
+        <p><code>&lt;s&gt;</code> haalt <s>een stuk tekst door</s>.</p>
+
+        <p>
+          <code>&lt;sub&gt;</code> is subschrift voor de cijfers in scheikundige formules zoals
+          C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> beter bekend als caffeïne en
+          C<sub>18</sub>H<sub>27</sub>NO<sub>3</sub> beter bekend als capsaïcine.
+        </p>
+
+        <p>
+          <code>&lt;sup&gt;</code> is superschrift voor voetnoten<sup>1</sup> of wiskundige formules
+          als de stelling van Pythagoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> of Einsteins
+          relativiteitstheorie: E=mc<sup>2</sup>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <h2>Microsites</h2>
+        <p>
+          FDND maakt gebruik van een heleboel microsites in plaats van één grote website met een
+          ingewikkelde informatiestructuur. Microsites zijn kleine websites met een specifiek doel
+          ter ondersteuning van een campagne, informatie over een product of dienst.
+        </p>
+        <ul>
+          <li><a href="https://fdnd.nl">FDND.nl</a></li>
+          <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
+          <li><a href="https://programma.fdnd.nl">Programma</a></li>
+          <li><a href="https://skc.fdnd.nl">Studie Keuze Check</a></li>
+          <li><a href="https://partners.fdnd.nl">Partners</a></li>
+          <li><a href="https://tasks.fdnd.nl">Leertaken</a></li>
+          <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

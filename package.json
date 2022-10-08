@@ -1,33 +1,22 @@
 {
-  "name": "styleguide",
+  "name": "styleguide.fdnd.nl",
   "version": "0.0.1",
   "description": "It's a styleguide for FDND!",
-  "source": "src/index.html",
-  "targets": {
-    "default": {
-      "publicUrl": "https://styleguide.fdnd.nl/",
-      "distDir": "./docs"
-    }
-  },
-  "@parcel/transformer-css": {
-    "drafts": {
-      "nesting": true
-    }
-  },
+  "source": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --detailed-report",
-    "test": "echo \"Run an automated test on the CSS\" && exit 1"
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fdnd/styleguide.git"
   },
   "keywords": [
-    "node",
     "css",
     "html",
-    "parcel"
+    "vite"
   ],
   "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
   "contributors": [
@@ -39,6 +28,8 @@
   },
   "homepage": "https://github.com/fdnd/styleguide#readme",
   "devDependencies": {
-    "parcel": "nightly"
+    "postcss-css-variables": "^0.18.0",
+    "postcss-nesting": "^10.2.0",
+    "vite": "^3.1.0"
   }
 }
