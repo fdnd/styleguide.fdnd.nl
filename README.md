@@ -9,6 +9,7 @@ Pas de FDND Styleguide toe op een website door een link element met een verwijzi
 Om backwards compatible te blijven worden naast bovenstaande link ook verwijzingen naar specifieke releases gemaakt, hier een overzicht van de historie aan releases:
 
 - [fdnd.latest.css](https://styleguide.fdnd.nl/fdnd.latest.css), laatste ontwikkelingen (unstable)
+- [fdnd.v1.css](https://styleguide.fdnd.nl/fdnd.v1.css), eerste versie van deze nieuwe stylesheet, hierbij krijg je de layout cadeau.
 - [fdnd.css](https://styleguide.fdnd.nl/fdnd.css), initiële opzet (hier verwijzen oude(re) microsites naar)
 
 ## Ontwikkeling
