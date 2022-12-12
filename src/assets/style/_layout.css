@@ -81,7 +81,7 @@ footer {
 /* Grid for larger screens */
 @media (min-width: 90rem) {
   body {
-    background: magenta;
+    /* background: magenta; */
     padding: 4rem 1rem;
     /* display: grid;
     grid-template-columns: minmax(20rem, 50rem) 20rem auto;
