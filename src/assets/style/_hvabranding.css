@@ -1,13 +1,4 @@
-/*88888888 8888888b.  888b    888 8888888b.
-888        888  "Y88b 8888b   888 888  "Y88b
-888        888    888 88888b  888 888    888
-8888888    888    888 888Y88b 888 888    888
-888        888    888 888 Y88b888 888    888
-888        888    888 888  Y88888 888    888
-888        888  .d88P 888   Y8888 888  .d88P
-888        8888888P"  888    Y888 8888888P"
-
-This file implements mandatory HvA Branding */
+/* This file implements mandatory HvA Branding */
 
 body:before,
 body:after {
@@ -15,14 +6,13 @@ body:after {
   display: block;
   position: absolute;
   white-space: pre-wrap;
-  width: 22rem;
+  width: 21.6rem;
   height: 2rem;
   left: 1rem;
-  background-position: center left;
   background-size: 10rem;
+  background-position: center left;
   font-size: 0.8rem;
   line-height: 1rem;
-  color: var(--white);
   z-index: 0;
 }
 
@@ -38,7 +28,6 @@ body:before {
     color: #000;
     content: 'Frontend \A Design & Development';
     padding: 0.04rem 1rem 0.3rem 12rem;
-    top: 1rem;
     background: url(/hvalogo.svg) no-repeat center left;
     background: url(/hvalogo.svg) no-repeat center left,
       linear-gradient(90deg, transparent calc(50% - 2px), #000 calc(50%), transparent calc(50%));
