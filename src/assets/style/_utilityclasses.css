@@ -15,6 +15,24 @@ a.icon svg {
   top: -0.5rem;
 }
 
+.blue-on-white,
+.blue-on-green,
+.blue-on-purple,
+.purple-on-blue,
+.white-on-blue,
+.green-on-blue {
+  padding: 2rem;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.pilled {
+  border-radius: var(--pilled);
+}
+
+.rounded {
+  border-radius: var(--rounded);
+}
 /* https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
 .visually-hidden {
   clip: rect(0 0 0 0);
